@@ -1,0 +1,288 @@
+******************************************************************************
+Device number: 0
+name: ASCII string identifying device:    A100-SXM4-40GB
+totalGlobalMem: Global memory available on device in bytes:    42505273344
+sharedMemPerBlock: Shared memory available per block in bytes:    49152
+regsPerBlock: 32-bit registers available per block:    65536
+warpSize: Warp size in threads:    32
+memPitch: Maximum pitch in bytes allowed by memory copies:    2147483647
+maxThreadsPerBlock: Maximum number of threads per block:    1024
+maxThreadsDim[3]: Maximum size of each dimension of a block:    1024 1024 64
+maxGridSize[3]: Maximum size of each dimension of a grid:    2147483647 65535 65535
+clockRate: Clock frequency in kilohertz:    1410000
+totalConstMem: Constant memory available on device in bytes:    65536
+major: Major compute capability:    8
+minor: Minor compute capability:    0
+textureAlignment: Alignment requirement for textures:    512
+deviceOverlap: Device can concurrently copy memory and execute a kernel:    1
+multiProcessorCount: Number of multiprocessors on device:    108
+kernelExecTimeoutEnable: Specified whether there is a run time limit on kernels:    0
+integrated: Device is integrated as opposed to discrete:    0
+canMapHostMemory: Device can map host memory with cudaHostAlloc/cudaHostGetDevicePointer:    1
+computeMode: Compute mode (See ::cudaComputeMode):    0
+surfaceAlignment: the alignment requirements for surfaces. 512
+concurrentKernels: is 1 if the device supports executing multiple kernels within the same context  simultaneously, or 0 if not. It is not guaranteed that multiple kernels will be resident on the device concurrently so this feature should not be relied upon for correctness 1
+ECCEnabled: is 1 if the device has ECC support turned on, or 0 if not. 1
+pciBusID: the PCI bus identifier of the device 7
+pciDeviceID: the PCI device (sometimes called slot) identifier of the device 0
+pciDomainID: the PCI domain identifier of the device 0
+tccDriver: 1 if the device is using a TCC driver or 0 if not 0
+asyncEngineCount: 1 when the device can concurrently copy memory between host and device while executing a kernel. It is 2 when the device can concurrently copy memory between host and device in both directions and execute a kernel at the same time. It is 0 if neither of these is supported. 3
+unifiedAddressing: 1 if the device shares a unified address space with the host and 0 otherwise 1
+memoryClockRate: the peak memory clock frequency in kilohertz 1215000
+memoryBusWidth: the memory bus width in bits 5120
+l2CacheSize: L2 cache size in bytes 41943040
+maxThreadsPerMultiProcessor: the number of maximum resident threads per multiprocessor 2048
+******************************************************************************
+******************************************************************************
+Device number: 1
+name: ASCII string identifying device:    A100-SXM4-40GB
+totalGlobalMem: Global memory available on device in bytes:    42505273344
+sharedMemPerBlock: Shared memory available per block in bytes:    49152
+regsPerBlock: 32-bit registers available per block:    65536
+warpSize: Warp size in threads:    32
+memPitch: Maximum pitch in bytes allowed by memory copies:    2147483647
+maxThreadsPerBlock: Maximum number of threads per block:    1024
+maxThreadsDim[3]: Maximum size of each dimension of a block:    1024 1024 64
+maxGridSize[3]: Maximum size of each dimension of a grid:    2147483647 65535 65535
+clockRate: Clock frequency in kilohertz:    1410000
+totalConstMem: Constant memory available on device in bytes:    65536
+major: Major compute capability:    8
+minor: Minor compute capability:    0
+textureAlignment: Alignment requirement for textures:    512
+deviceOverlap: Device can concurrently copy memory and execute a kernel:    1
+multiProcessorCount: Number of multiprocessors on device:    108
+kernelExecTimeoutEnable: Specified whether there is a run time limit on kernels:    0
+integrated: Device is integrated as opposed to discrete:    0
+canMapHostMemory: Device can map host memory with cudaHostAlloc/cudaHostGetDevicePointer:    1
+computeMode: Compute mode (See ::cudaComputeMode):    0
+surfaceAlignment: the alignment requirements for surfaces. 512
+concurrentKernels: is 1 if the device supports executing multiple kernels within the same context  simultaneously, or 0 if not. It is not guaranteed that multiple kernels will be resident on the device concurrently so this feature should not be relied upon for correctness 1
+ECCEnabled: is 1 if the device has ECC support turned on, or 0 if not. 1
+pciBusID: the PCI bus identifier of the device 15
+pciDeviceID: the PCI device (sometimes called slot) identifier of the device 0
+pciDomainID: the PCI domain identifier of the device 0
+tccDriver: 1 if the device is using a TCC driver or 0 if not 0
+asyncEngineCount: 1 when the device can concurrently copy memory between host and device while executing a kernel. It is 2 when the device can concurrently copy memory between host and device in both directions and execute a kernel at the same time. It is 0 if neither of these is supported. 3
+unifiedAddressing: 1 if the device shares a unified address space with the host and 0 otherwise 1
+memoryClockRate: the peak memory clock frequency in kilohertz 1215000
+memoryBusWidth: the memory bus width in bits 5120
+l2CacheSize: L2 cache size in bytes 41943040
+maxThreadsPerMultiProcessor: the number of maximum resident threads per multiprocessor 2048
+******************************************************************************
+******************************************************************************
+Device number: 2
+name: ASCII string identifying device:    A100-SXM4-40GB
+totalGlobalMem: Global memory available on device in bytes:    42505273344
+sharedMemPerBlock: Shared memory available per block in bytes:    49152
+regsPerBlock: 32-bit registers available per block:    65536
+warpSize: Warp size in threads:    32
+memPitch: Maximum pitch in bytes allowed by memory copies:    2147483647
+maxThreadsPerBlock: Maximum number of threads per block:    1024
+maxThreadsDim[3]: Maximum size of each dimension of a block:    1024 1024 64
+maxGridSize[3]: Maximum size of each dimension of a grid:    2147483647 65535 65535
+clockRate: Clock frequency in kilohertz:    1410000
+totalConstMem: Constant memory available on device in bytes:    65536
+major: Major compute capability:    8
+minor: Minor compute capability:    0
+textureAlignment: Alignment requirement for textures:    512
+deviceOverlap: Device can concurrently copy memory and execute a kernel:    1
+multiProcessorCount: Number of multiprocessors on device:    108
+kernelExecTimeoutEnable: Specified whether there is a run time limit on kernels:    0
+integrated: Device is integrated as opposed to discrete:    0
+canMapHostMemory: Device can map host memory with cudaHostAlloc/cudaHostGetDevicePointer:    1
+computeMode: Compute mode (See ::cudaComputeMode):    0
+surfaceAlignment: the alignment requirements for surfaces. 512
+concurrentKernels: is 1 if the device supports executing multiple kernels within the same context  simultaneously, or 0 if not. It is not guaranteed that multiple kernels will be resident on the device concurrently so this feature should not be relied upon for correctness 1
+ECCEnabled: is 1 if the device has ECC support turned on, or 0 if not. 1
+pciBusID: the PCI bus identifier of the device 71
+pciDeviceID: the PCI device (sometimes called slot) identifier of the device 0
+pciDomainID: the PCI domain identifier of the device 0
+tccDriver: 1 if the device is using a TCC driver or 0 if not 0
+asyncEngineCount: 1 when the device can concurrently copy memory between host and device while executing a kernel. It is 2 when the device can concurrently copy memory between host and device in both directions and execute a kernel at the same time. It is 0 if neither of these is supported. 3
+unifiedAddressing: 1 if the device shares a unified address space with the host and 0 otherwise 1
+memoryClockRate: the peak memory clock frequency in kilohertz 1215000
+memoryBusWidth: the memory bus width in bits 5120
+l2CacheSize: L2 cache size in bytes 41943040
+maxThreadsPerMultiProcessor: the number of maximum resident threads per multiprocessor 2048
+******************************************************************************
+******************************************************************************
+Device number: 3
+name: ASCII string identifying device:    A100-SXM4-40GB
+totalGlobalMem: Global memory available on device in bytes:    42505273344
+sharedMemPerBlock: Shared memory available per block in bytes:    49152
+regsPerBlock: 32-bit registers available per block:    65536
+warpSize: Warp size in threads:    32
+memPitch: Maximum pitch in bytes allowed by memory copies:    2147483647
+maxThreadsPerBlock: Maximum number of threads per block:    1024
+maxThreadsDim[3]: Maximum size of each dimension of a block:    1024 1024 64
+maxGridSize[3]: Maximum size of each dimension of a grid:    2147483647 65535 65535
+clockRate: Clock frequency in kilohertz:    1410000
+totalConstMem: Constant memory available on device in bytes:    65536
+major: Major compute capability:    8
+minor: Minor compute capability:    0
+textureAlignment: Alignment requirement for textures:    512
+deviceOverlap: Device can concurrently copy memory and execute a kernel:    1
+multiProcessorCount: Number of multiprocessors on device:    108
+kernelExecTimeoutEnable: Specified whether there is a run time limit on kernels:    0
+integrated: Device is integrated as opposed to discrete:    0
+canMapHostMemory: Device can map host memory with cudaHostAlloc/cudaHostGetDevicePointer:    1
+computeMode: Compute mode (See ::cudaComputeMode):    0
+surfaceAlignment: the alignment requirements for surfaces. 512
+concurrentKernels: is 1 if the device supports executing multiple kernels within the same context  simultaneously, or 0 if not. It is not guaranteed that multiple kernels will be resident on the device concurrently so this feature should not be relied upon for correctness 1
+ECCEnabled: is 1 if the device has ECC support turned on, or 0 if not. 1
+pciBusID: the PCI bus identifier of the device 78
+pciDeviceID: the PCI device (sometimes called slot) identifier of the device 0
+pciDomainID: the PCI domain identifier of the device 0
+tccDriver: 1 if the device is using a TCC driver or 0 if not 0
+asyncEngineCount: 1 when the device can concurrently copy memory between host and device while executing a kernel. It is 2 when the device can concurrently copy memory between host and device in both directions and execute a kernel at the same time. It is 0 if neither of these is supported. 3
+unifiedAddressing: 1 if the device shares a unified address space with the host and 0 otherwise 1
+memoryClockRate: the peak memory clock frequency in kilohertz 1215000
+memoryBusWidth: the memory bus width in bits 5120
+l2CacheSize: L2 cache size in bytes 41943040
+maxThreadsPerMultiProcessor: the number of maximum resident threads per multiprocessor 2048
+******************************************************************************
+******************************************************************************
+Device number: 4
+name: ASCII string identifying device:    A100-SXM4-40GB
+totalGlobalMem: Global memory available on device in bytes:    42505273344
+sharedMemPerBlock: Shared memory available per block in bytes:    49152
+regsPerBlock: 32-bit registers available per block:    65536
+warpSize: Warp size in threads:    32
+memPitch: Maximum pitch in bytes allowed by memory copies:    2147483647
+maxThreadsPerBlock: Maximum number of threads per block:    1024
+maxThreadsDim[3]: Maximum size of each dimension of a block:    1024 1024 64
+maxGridSize[3]: Maximum size of each dimension of a grid:    2147483647 65535 65535
+clockRate: Clock frequency in kilohertz:    1410000
+totalConstMem: Constant memory available on device in bytes:    65536
+major: Major compute capability:    8
+minor: Minor compute capability:    0
+textureAlignment: Alignment requirement for textures:    512
+deviceOverlap: Device can concurrently copy memory and execute a kernel:    1
+multiProcessorCount: Number of multiprocessors on device:    108
+kernelExecTimeoutEnable: Specified whether there is a run time limit on kernels:    0
+integrated: Device is integrated as opposed to discrete:    0
+canMapHostMemory: Device can map host memory with cudaHostAlloc/cudaHostGetDevicePointer:    1
+computeMode: Compute mode (See ::cudaComputeMode):    0
+surfaceAlignment: the alignment requirements for surfaces. 512
+concurrentKernels: is 1 if the device supports executing multiple kernels within the same context  simultaneously, or 0 if not. It is not guaranteed that multiple kernels will be resident on the device concurrently so this feature should not be relied upon for correctness 1
+ECCEnabled: is 1 if the device has ECC support turned on, or 0 if not. 1
+pciBusID: the PCI bus identifier of the device 135
+pciDeviceID: the PCI device (sometimes called slot) identifier of the device 0
+pciDomainID: the PCI domain identifier of the device 0
+tccDriver: 1 if the device is using a TCC driver or 0 if not 0
+asyncEngineCount: 1 when the device can concurrently copy memory between host and device while executing a kernel. It is 2 when the device can concurrently copy memory between host and device in both directions and execute a kernel at the same time. It is 0 if neither of these is supported. 3
+unifiedAddressing: 1 if the device shares a unified address space with the host and 0 otherwise 1
+memoryClockRate: the peak memory clock frequency in kilohertz 1215000
+memoryBusWidth: the memory bus width in bits 5120
+l2CacheSize: L2 cache size in bytes 41943040
+maxThreadsPerMultiProcessor: the number of maximum resident threads per multiprocessor 2048
+******************************************************************************
+******************************************************************************
+Device number: 5
+name: ASCII string identifying device:    A100-SXM4-40GB
+totalGlobalMem: Global memory available on device in bytes:    42505273344
+sharedMemPerBlock: Shared memory available per block in bytes:    49152
+regsPerBlock: 32-bit registers available per block:    65536
+warpSize: Warp size in threads:    32
+memPitch: Maximum pitch in bytes allowed by memory copies:    2147483647
+maxThreadsPerBlock: Maximum number of threads per block:    1024
+maxThreadsDim[3]: Maximum size of each dimension of a block:    1024 1024 64
+maxGridSize[3]: Maximum size of each dimension of a grid:    2147483647 65535 65535
+clockRate: Clock frequency in kilohertz:    1410000
+totalConstMem: Constant memory available on device in bytes:    65536
+major: Major compute capability:    8
+minor: Minor compute capability:    0
+textureAlignment: Alignment requirement for textures:    512
+deviceOverlap: Device can concurrently copy memory and execute a kernel:    1
+multiProcessorCount: Number of multiprocessors on device:    108
+kernelExecTimeoutEnable: Specified whether there is a run time limit on kernels:    0
+integrated: Device is integrated as opposed to discrete:    0
+canMapHostMemory: Device can map host memory with cudaHostAlloc/cudaHostGetDevicePointer:    1
+computeMode: Compute mode (See ::cudaComputeMode):    0
+surfaceAlignment: the alignment requirements for surfaces. 512
+concurrentKernels: is 1 if the device supports executing multiple kernels within the same context  simultaneously, or 0 if not. It is not guaranteed that multiple kernels will be resident on the device concurrently so this feature should not be relied upon for correctness 1
+ECCEnabled: is 1 if the device has ECC support turned on, or 0 if not. 1
+pciBusID: the PCI bus identifier of the device 144
+pciDeviceID: the PCI device (sometimes called slot) identifier of the device 0
+pciDomainID: the PCI domain identifier of the device 0
+tccDriver: 1 if the device is using a TCC driver or 0 if not 0
+asyncEngineCount: 1 when the device can concurrently copy memory between host and device while executing a kernel. It is 2 when the device can concurrently copy memory between host and device in both directions and execute a kernel at the same time. It is 0 if neither of these is supported. 3
+unifiedAddressing: 1 if the device shares a unified address space with the host and 0 otherwise 1
+memoryClockRate: the peak memory clock frequency in kilohertz 1215000
+memoryBusWidth: the memory bus width in bits 5120
+l2CacheSize: L2 cache size in bytes 41943040
+maxThreadsPerMultiProcessor: the number of maximum resident threads per multiprocessor 2048
+******************************************************************************
+******************************************************************************
+Device number: 6
+name: ASCII string identifying device:    A100-SXM4-40GB
+totalGlobalMem: Global memory available on device in bytes:    42505273344
+sharedMemPerBlock: Shared memory available per block in bytes:    49152
+regsPerBlock: 32-bit registers available per block:    65536
+warpSize: Warp size in threads:    32
+memPitch: Maximum pitch in bytes allowed by memory copies:    2147483647
+maxThreadsPerBlock: Maximum number of threads per block:    1024
+maxThreadsDim[3]: Maximum size of each dimension of a block:    1024 1024 64
+maxGridSize[3]: Maximum size of each dimension of a grid:    2147483647 65535 65535
+clockRate: Clock frequency in kilohertz:    1410000
+totalConstMem: Constant memory available on device in bytes:    65536
+major: Major compute capability:    8
+minor: Minor compute capability:    0
+textureAlignment: Alignment requirement for textures:    512
+deviceOverlap: Device can concurrently copy memory and execute a kernel:    1
+multiProcessorCount: Number of multiprocessors on device:    108
+kernelExecTimeoutEnable: Specified whether there is a run time limit on kernels:    0
+integrated: Device is integrated as opposed to discrete:    0
+canMapHostMemory: Device can map host memory with cudaHostAlloc/cudaHostGetDevicePointer:    1
+computeMode: Compute mode (See ::cudaComputeMode):    0
+surfaceAlignment: the alignment requirements for surfaces. 512
+concurrentKernels: is 1 if the device supports executing multiple kernels within the same context  simultaneously, or 0 if not. It is not guaranteed that multiple kernels will be resident on the device concurrently so this feature should not be relied upon for correctness 1
+ECCEnabled: is 1 if the device has ECC support turned on, or 0 if not. 1
+pciBusID: the PCI bus identifier of the device 183
+pciDeviceID: the PCI device (sometimes called slot) identifier of the device 0
+pciDomainID: the PCI domain identifier of the device 0
+tccDriver: 1 if the device is using a TCC driver or 0 if not 0
+asyncEngineCount: 1 when the device can concurrently copy memory between host and device while executing a kernel. It is 2 when the device can concurrently copy memory between host and device in both directions and execute a kernel at the same time. It is 0 if neither of these is supported. 3
+unifiedAddressing: 1 if the device shares a unified address space with the host and 0 otherwise 1
+memoryClockRate: the peak memory clock frequency in kilohertz 1215000
+memoryBusWidth: the memory bus width in bits 5120
+l2CacheSize: L2 cache size in bytes 41943040
+maxThreadsPerMultiProcessor: the number of maximum resident threads per multiprocessor 2048
+******************************************************************************
+******************************************************************************
+Device number: 7
+name: ASCII string identifying device:    A100-SXM4-40GB
+totalGlobalMem: Global memory available on device in bytes:    42505273344
+sharedMemPerBlock: Shared memory available per block in bytes:    49152
+regsPerBlock: 32-bit registers available per block:    65536
+warpSize: Warp size in threads:    32
+memPitch: Maximum pitch in bytes allowed by memory copies:    2147483647
+maxThreadsPerBlock: Maximum number of threads per block:    1024
+maxThreadsDim[3]: Maximum size of each dimension of a block:    1024 1024 64
+maxGridSize[3]: Maximum size of each dimension of a grid:    2147483647 65535 65535
+clockRate: Clock frequency in kilohertz:    1410000
+totalConstMem: Constant memory available on device in bytes:    65536
+major: Major compute capability:    8
+minor: Minor compute capability:    0
+textureAlignment: Alignment requirement for textures:    512
+deviceOverlap: Device can concurrently copy memory and execute a kernel:    1
+multiProcessorCount: Number of multiprocessors on device:    108
+kernelExecTimeoutEnable: Specified whether there is a run time limit on kernels:    0
+integrated: Device is integrated as opposed to discrete:    0
+canMapHostMemory: Device can map host memory with cudaHostAlloc/cudaHostGetDevicePointer:    1
+computeMode: Compute mode (See ::cudaComputeMode):    0
+surfaceAlignment: the alignment requirements for surfaces. 512
+concurrentKernels: is 1 if the device supports executing multiple kernels within the same context  simultaneously, or 0 if not. It is not guaranteed that multiple kernels will be resident on the device concurrently so this feature should not be relied upon for correctness 1
+ECCEnabled: is 1 if the device has ECC support turned on, or 0 if not. 1
+pciBusID: the PCI bus identifier of the device 189
+pciDeviceID: the PCI device (sometimes called slot) identifier of the device 0
+pciDomainID: the PCI domain identifier of the device 0
+tccDriver: 1 if the device is using a TCC driver or 0 if not 0
+asyncEngineCount: 1 when the device can concurrently copy memory between host and device while executing a kernel. It is 2 when the device can concurrently copy memory between host and device in both directions and execute a kernel at the same time. It is 0 if neither of these is supported. 3
+unifiedAddressing: 1 if the device shares a unified address space with the host and 0 otherwise 1
+memoryClockRate: the peak memory clock frequency in kilohertz 1215000
+memoryBusWidth: the memory bus width in bits 5120
+l2CacheSize: L2 cache size in bytes 41943040
+maxThreadsPerMultiProcessor: the number of maximum resident threads per multiprocessor 2048
+******************************************************************************

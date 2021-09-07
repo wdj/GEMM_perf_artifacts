@@ -1,0 +1,472 @@
+======================= ROCm System Management Interface =======================
+================================= Concise Info =================================
+GPU  Temp   AvgPwr  SCLK    MCLK     Fan   Perf  PwrCap  VRAM%  GPU%  
+0    32.0c  34.0W   300Mhz  1200Mhz  255%  auto  290.0W    0%   0%    
+1    31.0c  35.0W   300Mhz  1200Mhz  255%  auto  290.0W    0%   0%    
+2    30.0c  34.0W   300Mhz  1200Mhz  255%  auto  290.0W    0%   0%    
+3    32.0c  34.0W   300Mhz  1200Mhz  255%  auto  290.0W    0%   0%    
+================================================================================
+============================= End of ROCm SMI Log ==============================
+
+
+spock-spock23$ srun -n1 rocm-smi -a    
+ERROR: GPU[0] 		: dcefclk clock is unsupported
+ERROR: GPU[1] 		: dcefclk clock is unsupported
+ERROR: GPU[2] 		: dcefclk clock is unsupported
+ERROR: GPU[3] 		: dcefclk clock is unsupported
+ERROR: GPU[0] 		: dcefclk frequency is unsupported
+ERROR: GPU[1] 		: dcefclk frequency is unsupported
+ERROR: GPU[2] 		: dcefclk frequency is unsupported
+
+
+======================= ROCm System Management Interface =======================
+========================= Version of System Component ==========================
+Driver version: 5.9.25
+================================================================================
+====================================== ID ======================================
+GPU[0]		: GPU ID: 0x738c
+GPU[1]		: GPU ID: 0x738c
+GPU[2]		: GPU ID: 0x738c
+GPU[3]		: GPU ID: 0x738c
+================================================================================
+================================== Unique ID ===================================
+GPU[0]		: Unique ID: 0xd4446d5f5ffb79fb
+GPU[1]		: Unique ID: 0xa4f13d6cccd47e3f
+GPU[2]		: Unique ID: 0xfa081aae2bb63a41
+GPU[3]		: Unique ID: 0xee978da4f7641901
+================================================================================
+==================================== VBIOS =====================================
+GPU[0]		: VBIOS version: 113-D3431500-100
+GPU[1]		: VBIOS version: 113-D3431500-100
+GPU[2]		: VBIOS version: 113-D3431500-100
+GPU[3]		: VBIOS version: 113-D3431500-100
+================================================================================
+================================= Temperature ==================================
+GPU[0]		: Temperature (Sensor edge) (C): 32.0
+GPU[0]		: Temperature (Sensor junction) (C): 34.0
+GPU[0]		: Temperature (Sensor memory) (C): 34.0
+GPU[1]		: Temperature (Sensor edge) (C): 31.0
+GPU[1]		: Temperature (Sensor junction) (C): 33.0
+GPU[1]		: Temperature (Sensor memory) (C): 32.0
+GPU[2]		: Temperature (Sensor edge) (C): 31.0
+GPU[2]		: Temperature (Sensor junction) (C): 33.0
+GPU[2]		: Temperature (Sensor memory) (C): 31.0
+GPU[3]		: Temperature (Sensor edge) (C): 33.0
+GPU[3]		: Temperature (Sensor junction) (C): 34.0
+GPU[3]		: Temperature (Sensor memory) (C): 36.0
+================================================================================
+========================== Current clock frequencies ===========================
+GPU[0]		: fclk clock level: 0: (1402Mhz)
+GPU[0]		: mclk clock level: 0: (1200Mhz)
+GPU[0]		: sclk clock level: 0: (300Mhz)
+GPU[0]		: socclk clock level: 0: (1000Mhz)
+GPU[0]		: pcie clock level: 0 (16.0GT/s x16)
+GPU[1]		: fclk clock level: 0: (1402Mhz)
+GPU[1]		: mclk clock level: 0: (1200Mhz)
+GPU[1]		: sclk clock level: 0: (300Mhz)
+GPU[1]		: socclk clock level: 0: (1000Mhz)
+GPU[1]		: pcie clock level: 0 (16.0GT/s x16)
+GPU[2]		: fclk clock level: 0: (1402Mhz)
+GPU[2]		: mclk clock level: 0: (1200Mhz)
+GPU[2]		: sclk clock level: 0: (300Mhz)
+GPU[2]		: socclk clock level: 0: (1000Mhz)
+GPU[2]		: pcie clock level: 0 (16.0GT/s x16)
+GPU[3]		: fclk clock level: 0: (1402Mhz)
+GPU[3]		: mclk clock level: 0: (1200Mhz)
+GPU[3]		: sclk clock level: 0: (300Mhz)
+GPU[3]		: socclk clock level: 0: (1000Mhz)
+GPU[3]		: pcie clock level: 0 (16.0GT/s x16)
+================================================================================
+============================== Current Fan Metric ==============================
+GPU[0]		: Unable to detect fan speed for GPU 0
+GPU[1]		: Unable to detect fan speed for GPU 1
+GPU[2]		: Unable to detect fan speed for GPU 2
+GPU[3]		: Unable to detect fan speed for GPU 3
+================================================================================
+============================ Show Performance Level ============================
+GPU[0]		: Performance Level: auto
+GPU[1]		: Performance Level: auto
+GPU[2]		: Performance Level: auto
+GPU[3]		: Performance Level: auto
+================================================================================
+=============================== OverDrive Level ================================
+GPU[0]		: GPU OverDrive value (%): 0
+GPU[1]		: GPU OverDrive value (%): 0
+GPU[2]		: GPU OverDrive value (%): 0
+GPU[3]		: GPU OverDrive value (%): 0
+================================================================================
+=============================== OverDrive Level ================================
+GPU[0]		: GPU Memory OverDrive value (%): 0
+GPU[1]		: GPU Memory OverDrive value (%): 0
+GPU[2]		: GPU Memory OverDrive value (%): 0
+GPU[3]		: GPU Memory OverDrive value (%): 0
+================================================================================
+================================== Power Cap ===================================
+GPU[0]		: Max Graphics Package Power (W): 290.0
+GPU[1]		: Max Graphics Package Power (W): 290.0
+GPU[2]		: Max Graphics Package Power (W): 290.0
+GPU[3]		: Max Graphics Package Power (W): 290.0
+================================================================================
+============================= Show Power Profiles ==============================
+GPU[0]		: 1. Available power profile (#1 of 7): CUSTOM
+GPU[0]		: 2. Available power profile (#2 of 7): VIDEO
+GPU[0]		: 3. Available power profile (#3 of 7): POWER SAVING
+GPU[0]		: 4. Available power profile (#4 of 7): COMPUTE
+GPU[0]		: 5. Available power profile (#7 of 7): BOOTUP DEFAULT*
+GPU[1]		: 1. Available power profile (#1 of 7): CUSTOM
+GPU[1]		: 2. Available power profile (#2 of 7): VIDEO
+GPU[1]		: 3. Available power profile (#3 of 7): POWER SAVING
+GPU[1]		: 4. Available power profile (#4 of 7): COMPUTE
+GPU[1]		: 5. Available power profile (#7 of 7): BOOTUP DEFAULT*
+GPU[2]		: 1. Available power profile (#1 of 7): CUSTOM
+GPU[2]		: 2. Available power profile (#2 of 7): VIDEO
+GPU[2]		: 3. Available power profile (#3 of 7): POWER SAVING
+GPU[2]		: 4. Available power profile (#4 of 7): COMPUTE
+GPU[2]		: 5. Available power profile (#7 of 7): BOOTUP DEFAULT*
+GPU[3]		: 1. Available power profile (#1 of 7): CUSTOM
+GPU[3]		: 2. Available power profile (#2 of 7): VIDEO
+GPU[3]		: 3. Available power profile (#3 of 7): POWER SAVING
+GPU[3]		: 4. Available power profile (#4 of 7): COMPUTE
+GPU[3]		: 5. Available power profile (#7 of 7): BOOTUP DEFAULT*
+================================================================================
+============================== Power Consumption ===============================
+GPU[0]		: Average Graphics Package Power (W): 34.0
+GPU[1]		: Average Graphics Package Power (W): 35.0
+GPU[2]		: Average Graphics Package Power (W): 34.0
+GPU[3]		: Average Graphics Package Power (W): 34.0
+================================================================================
+========================= Supported clock frequencies ==========================
+GPU[0]		: 
+GPU[0]		: Supported fclk frequencies on GPU0
+GPU[0]		: 0: 1402Mhz *
+GPU[0]		: 
+GPU[0]		: Supported mclk frequencies on GPU0
+GPU[0]		: 0: 1200Mhz *
+GPU[0]		: 
+GPU[0]		: Supported sclk frequencies on GPU0
+GPU[0]		: 0: 300Mhz *
+GPU[0]		: 1: 495Mhz
+GPU[0]		: 2: 731Mhz
+GPU[0]		: 3: 962Mhz
+GPU[0]		: 4: 1029Mhz
+GPU[0]		: 5: 1087Mhz
+GPU[0]		: 6: 1147Mhz
+GPU[0]		: 7: 1189Mhz
+GPU[0]		: 8: 1235Mhz
+GPU[0]		: 9: 1283Mhz
+GPU[0]		: 10: 1319Mhz
+GPU[0]		: 11: 1363Mhz
+GPU[0]		: 12: 1404Mhz
+GPU[0]		: 13: 1430Mhz
+GPU[0]		: 14: 1472Mhz
+GPU[0]		: 15: 1502Mhz
+GPU[0]		: 
+GPU[0]		: Supported socclk frequencies on GPU0
+GPU[0]		: 0: 1000Mhz *
+GPU[0]		: 
+GPU[0]		: Supported PCIe frequencies on GPU0
+GPU[0]		: 0: 16.0GT/s x16 *
+GPU[0]		: 
+--------------------------------------------------------------------------------
+GPU[1]		: 
+GPU[1]		: Supported fclk frequencies on GPU1
+GPU[1]		: 0: 1402Mhz *
+GPU[1]		: 
+GPU[1]		: Supported mclk frequencies on GPU1
+GPU[1]		: 0: 1200Mhz *
+GPU[1]		: 
+GPU[1]		: Supported sclk frequencies on GPU1
+GPU[1]		: 0: 300Mhz *
+GPU[1]		: 1: 495Mhz
+GPU[1]		: 2: 731Mhz
+GPU[1]		: 3: 962Mhz
+GPU[1]		: 4: 1029Mhz
+GPU[1]		: 5: 1087Mhz
+GPU[1]		: 6: 1147Mhz
+GPU[1]		: 7: 1189Mhz
+GPU[1]		: 8: 1235Mhz
+GPU[1]		: 9: 1283Mhz
+GPU[1]		: 10: 1319Mhz
+GPU[1]		: 11: 1363Mhz
+GPU[1]		: 12: 1404Mhz
+GPU[1]		: 13: 1430Mhz
+GPU[1]		: 14: 1472Mhz
+GPU[1]		: 15: 1502Mhz
+GPU[1]		: 
+GPU[1]		: Supported socclk frequencies on GPU1
+GPU[1]		: 0: 1000Mhz *
+GPU[1]		: 
+GPU[1]		: Supported PCIe frequencies on GPU1
+GPU[1]		: 0: 16.0GT/s x16 *
+GPU[1]		: 
+--------------------------------------------------------------------------------
+GPU[2]		: 
+GPU[2]		: Supported fclk frequencies on GPU2
+GPU[2]		: 0: 1402Mhz *
+GPU[2]		: 
+GPU[2]		: Supported mclk frequencies on GPU2
+GPU[2]		: 0: 1200Mhz *
+GPU[2]		: 
+GPU[2]		: Supported sclk frequencies on GPU2
+srun: error: spock23: task 0: Exited with exit code 2
+srun: launch/slurm: _step_signal: Terminating StepId=275534.5
+ERROR: GPU[3] 		: dcefclk frequency is unsupported
+ERROR: 2 GPU[0]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[1]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[2]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[3]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+GPU[2]		: 0: 300Mhz *
+GPU[2]		: 1: 495Mhz
+GPU[2]		: 2: 731Mhz
+GPU[2]		: 3: 962Mhz
+GPU[2]		: 4: 1029Mhz
+GPU[2]		: 5: 1087Mhz
+GPU[2]		: 6: 1147Mhz
+GPU[2]		: 7: 1189Mhz
+GPU[2]		: 8: 1235Mhz
+GPU[2]		: 9: 1283Mhz
+GPU[2]		: 10: 1319Mhz
+GPU[2]		: 11: 1363Mhz
+GPU[2]		: 12: 1404Mhz
+GPU[2]		: 13: 1430Mhz
+GPU[2]		: 14: 1472Mhz
+GPU[2]		: 15: 1502Mhz
+GPU[2]		: 
+GPU[2]		: Supported socclk frequencies on GPU2
+GPU[2]		: 0: 1000Mhz *
+GPU[2]		: 
+GPU[2]		: Supported PCIe frequencies on GPU2
+GPU[2]		: 0: 16.0GT/s x16 *
+GPU[2]		: 
+--------------------------------------------------------------------------------
+GPU[3]		: 
+GPU[3]		: Supported fclk frequencies on GPU3
+GPU[3]		: 0: 1402Mhz *
+GPU[3]		: 
+GPU[3]		: Supported mclk frequencies on GPU3
+GPU[3]		: 0: 1200Mhz *
+GPU[3]		: 
+GPU[3]		: Supported sclk frequencies on GPU3
+GPU[3]		: 0: 300Mhz *
+GPU[3]		: 1: 495Mhz
+GPU[3]		: 2: 731Mhz
+GPU[3]		: 3: 962Mhz
+GPU[3]		: 4: 1029Mhz
+GPU[3]		: 5: 1087Mhz
+GPU[3]		: 6: 1147Mhz
+GPU[3]		: 7: 1189Mhz
+GPU[3]		: 8: 1235Mhz
+GPU[3]		: 9: 1283Mhz
+GPU[3]		: 10: 1319Mhz
+GPU[3]		: 11: 1363Mhz
+GPU[3]		: 12: 1404Mhz
+GPU[3]		: 13: 1430Mhz
+GPU[3]		: 14: 1472Mhz
+GPU[3]		: 15: 1502Mhz
+GPU[3]		: 
+GPU[3]		: Supported socclk frequencies on GPU3
+GPU[3]		: 0: 1000Mhz *
+GPU[3]		: 
+GPU[3]		: Supported PCIe frequencies on GPU3
+GPU[3]		: 0: 16.0GT/s x16 *
+GPU[3]		: 
+--------------------------------------------------------------------------------
+================================================================================
+============================== % time GPU is busy ==============================
+GPU[0]		: GPU use (%): 0
+GPU[1]		: GPU use (%): 0
+GPU[2]		: GPU use (%): 0
+GPU[3]		: GPU use (%): 0
+================================================================================
+============================== Current Memory Use ==============================
+GPU[0]		: GPU memory use (%): 0
+GPU[1]		: GPU memory use (%): 0
+GPU[2]		: GPU memory use (%): 0
+GPU[3]		: GPU memory use (%): 0
+================================================================================
+================================ Memory Vendor =================================
+GPU[0]		: GPU memory vendor: hynix
+GPU[1]		: GPU memory vendor: hynix
+GPU[2]		: GPU memory vendor: hynix
+GPU[3]		: GPU memory vendor: hynix
+================================================================================
+============================= PCIe Replay Counter ==============================
+GPU[0]		: PCIe Replay Count: 0
+GPU[1]		: PCIe Replay Count: 0
+GPU[2]		: PCIe Replay Count: 0
+GPU[3]		: PCIe Replay Count: 0
+================================================================================
+================================ Serial Number =================================
+GPU[0]		: Serial Number: d4446d5f5ffb79fb
+GPU[1]		: Serial Number: a4f13d6cccd47e3f
+GPU[2]		: Serial Number: fa081aae2bb63a41
+GPU[3]		: Serial Number: ee978da4f7641901
+================================================================================
+================================ KFD Processes =================================
+No KFD PIDs currently running
+================================================================================
+============================= GPUs Indexed by PID ==============================
+No KFD PIDs currently running
+================================================================================
+================== GPU Memory clock frequencies and voltages ===================
+================================================================================
+=============================== Current voltage ================================
+GPU[0]		: Voltage (mV): 662
+GPU[1]		: Voltage (mV): 662
+GPU[2]		: Voltage (mV): 656
+GPU[3]		: Voltage (mV): 656
+================================================================================
+================================== PCI Bus ID ==================================
+GPU[0]		: PCI Bus: 0000:C9:00.0
+GPU[1]		: PCI Bus: 0000:87:00.0
+GPU[2]		: PCI Bus: 0000:48:00.0
+GPU[3]		: PCI Bus: 0000:09:00.0
+================================================================================
+============================= Firmware Information =============================
+GPU[0]		: ASD firmware version: 	553648204
+GPU[0]		: CE firmware version: 		0
+GPU[0]		: DMCU firmware version: 	0
+GPU[0]		: MC firmware version: 		0
+GPU[0]		: ME firmware version: 		0
+GPU[0]		: MEC firmware version: 	53
+GPU[0]		: MEC2 firmware version: 	53
+GPU[0]		: PFP firmware version: 	0
+GPU[0]		: RLC firmware version: 	24
+GPU[0]		: RLC SRLC firmware version: 	0
+GPU[0]		: RLC SRLG firmware version: 	0
+GPU[0]		: RLC SRLS firmware version: 	0
+GPU[0]		: SDMA firmware version: 	14
+GPU[0]		: SDMA2 firmware version: 	14
+GPU[0]		: SMC firmware version: 	00.54.28.00
+GPU[0]		: SOS firmware version: 	0x0017004f
+GPU[0]		: TA RAS firmware version: 	27.00.01.37
+GPU[0]		: TA XGMI firmware version: 	32.00.00.05
+GPU[0]		: UVD firmware version: 	0x00000000
+GPU[0]		: VCE firmware version: 	0x00000000
+GPU[0]		: VCN firmware version: 	0x01101015
+GPU[1]		: ASD firmware version: 	553648204
+GPU[1]		: CE firmware version: 		0
+GPU[1]		: DMCU firmware version: 	0
+GPU[1]		: MC firmware version: 		0
+GPU[1]		: ME firmware version: 		0
+GPU[1]		: MEC firmware version: 	53
+GPU[1]		: MEC2 firmware version: 	53
+GPU[1]		: PFP firmware version: 	0
+GPU[1]		: RLC firmware version: 	24
+GPU[1]		: RLC SRLC firmware version: 	0
+GPU[1]		: RLC SRLG firmware version: 	0
+GPU[1]		: RLC SRLS firmware version: 	0
+GPU[1]		: SDMA firmware version: 	14
+GPU[1]		: SDMA2 firmware version: 	14
+GPU[1]		: SMC firmware version: 	00.54.28.00
+GPU[1]		: SOS firmware version: 	0x0017004f
+GPU[1]		: TA RAS firmware version: 	27.00.01.37
+GPU[1]		: TA XGMI firmware version: 	32.00.00.05
+GPU[1]		: UVD firmware version: 	0x00000000
+GPU[1]		: VCE firmware version: 	0x00000000
+GPU[1]		: VCN firmware version: 	0x01101015
+GPU[2]		: ASD firmware version: 	553648204
+GPU[2]		: CE firmware version: 		0
+GPU[2]		: DMCU firmware version: 	0
+GPU[2]		: MC firmware version: 		0
+GPU[2]		: ME firmware version: 		0
+GPU[2]		: MEC firmware version: 	53
+GPU[2]		: MEC2 firmware version: 	53
+GPU[2]		: PFP firmware version: 	0
+GPU[2]		: RLC firmware version: 	24
+GPU[2]		: RLC SRLC firmware version: 	0
+GPU[2]		: RLC SRLG firmware version: 	0
+GPU[2]		: RLC SRLS firmware version: 	0
+GPU[2]		: SDMA firmware version: 	14
+GPU[2]		: SDMA2 firmware version: 	14
+GPU[2]		: SMC firmware version: 	00.54.28.00
+GPU[2]		: SOS firmware version: 	0x0017004f
+GPU[2]		: TA RAS firmware version: 	27.00.01.37
+GPU[2]		: TA XGMI firmware version: 	32.00.00.05
+GPU[2]		: UVD firmware version: 	0x00000000
+GPU[2]		: VCE firmware version: 	0x00000000
+GPU[2]		: VCN firmware version: 	0x01101015
+GPU[3]		: ASD firmware version: 	553648204
+GPU[3]		: CE firmware version: 		0
+GPU[3]		: DMCU firmware version: 	0
+GPU[3]		: MC firmware version: 		0
+GPU[3]		: ME firmware version: 		0
+GPU[3]		: MEC firmware version: 	53
+GPU[3]		: MEC2 firmware version: 	53
+GPU[3]		: PFP firmware version: 	0
+GPU[3]		: RLC firmware version: 	24
+GPU[3]		: RLC SRLC firmware version: 	0
+GPU[3]		: RLC SRLG firmware version: 	0
+GPU[3]		: RLC SRLS firmware version: 	0
+GPU[3]		: SDMA firmware version: 	14
+GPU[3]		: SDMA2 firmware version: 	14
+GPU[3]		: SMC firmware version: 	00.54.28.00
+GPU[3]		: SOS firmware version: 	0x0017004f
+GPU[3]		: TA RAS firmware version: 	27.00.01.37
+GPU[3]		: TA XGMI firmware version: 	32.00.00.05
+GPU[3]		: UVD firmware version: 	0x00000000
+GPU[3]		: VCE firmware version: 	0x00000000
+GPU[3]		: VCN firmware version: 	0x01101015
+================================================================================
+================================= Product Info =================================
+GPU[0]		: Card model: 		0xc34
+GPU[0]		: Card vendor: 		Advanced Micro Devices, Inc. [AMD/ATI]
+GPU[0]		: Card SKU: 		D34315
+GPU[1]		: Card model: 		0xc34
+GPU[1]		: Card vendor: 		Advanced Micro Devices, Inc. [AMD/ATI]
+GPU[1]		: Card SKU: 		D34315
+GPU[2]		: Card model: 		0xc34
+GPU[2]		: Card vendor: 		Advanced Micro Devices, Inc. [AMD/ATI]
+GPU[2]		: Card SKU: 		D34315
+GPU[3]		: Card model: 		0xc34
+GPU[3]		: Card vendor: 		Advanced Micro Devices, Inc. [AMD/ATI]
+GPU[3]		: Card SKU: 		D34315
+ERROR: 2 GPU[0]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[1]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[2]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[3]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[0]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[1]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[2]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[3]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[0]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[1]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[2]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[3]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[0]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[1]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[2]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+ERROR: 2 GPU[3]: od volt: RSMI_STATUS_NOT_SUPPORTED: This function is not supported in the current environment.	
+WARNING:  		 One or more commands failed
+================================================================================
+================================== Pages Info ==================================
+================================================================================
+============================ Show Valid sclk Range =============================
+GPU[0]		: Unable to display sclk range
+GPU[1]		: Unable to display sclk range
+GPU[2]		: Unable to display sclk range
+GPU[3]		: Unable to display sclk range
+================================================================================
+============================ Show Valid mclk Range =============================
+GPU[0]		: Unable to display mclk range
+GPU[1]		: Unable to display mclk range
+GPU[2]		: Unable to display mclk range
+GPU[3]		: Unable to display mclk range
+================================================================================
+=========================== Show Valid voltage Range ===========================
+GPU[0]		: Unable to display voltage range
+GPU[1]		: Unable to display voltage range
+GPU[2]		: Unable to display voltage range
+GPU[3]		: Unable to display voltage range
+================================================================================
+============================= Voltage Curve Points =============================
+GPU[0]		: Voltage Curve is not supported
+GPU[1]		: Voltage Curve is not supported
+GPU[2]		: Voltage Curve is not supported
+GPU[3]		: Voltage Curve is not supported
+================================================================================
+============================= End of ROCm SMI Log ==============================
+
+
+
+

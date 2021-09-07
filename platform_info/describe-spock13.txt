@@ -1,0 +1,221 @@
+spock-spock13$ srun -n1 ./describe_rocm 
+******************************************************************************
+Device number: 0
+Arcturus GL-XL [AMD Instinct MI100] name Device name
+34342961152 totalGlobalMem Size of global memory region (in bytes)
+65536 sharedMemPerBlock Size of shared memory region (in bytes)
+65536 regsPerBlock Registers per block
+64 warpSize Warp size
+1024 maxThreadsPerBlock Max work items per work group or workgroup max size
+1024 maxThreadsDim[0]1024 maxThreadsDim[1]1024 maxThreadsDim[2] Max number of threads in each dimension (XYZ) of a block
+2147483647 maxGridSize[0]2147483647 maxGridSize[1]2147483647 maxGridSize[2] Max grid dimensions (XYZ)
+1502000 clockRate Max clock frequency of the multiProcessors in khz
+1200000 memoryClockRate Max global memory clock frequency in khz
+4096 memoryBusWidth Global memory bus width in bits
+34342961152 totalConstMem Size of shared memory region (in bytes)
+9 major Major compute capability.  On HCC, this is an approximation and features may differ from CUDA CC.  See the arch feature flags for portable ways to query feature caps
+0 minor Minor compute capability.  On HCC, this is an approximation and features may differ from CUDA CC.  See the arch feature flags for portable ways to query feature caps
+120 multiProcessorCount Number of multi-processors (compute units)
+0 l2CacheSize L2 cache size
+2560 maxThreadsPerMultiProcessor Maximum resident threads per multi-processor
+0 computeMode Compute mode
+1000000 clockInstructionRate Frequency in khz of the timer used by the device-side "clock*" instructions.  New for HIP
+1 concurrentKernels Device can possibly execute multiple kernels concurrently
+0 pciDomainID PCI Domain ID
+201 pciBusID PCI Bus ID
+0 pciDeviceID PCI Device ID
+65536 maxSharedMemoryPerMultiProcessor Maximum Shared Memory Per Multiprocessor
+0 isMultiGpuBoard 1 if device is on a multi-GPU board, 0 if not
+1 canMapHostMemory Check whether HIP can map host memory
+908 gcnArch DEPRECATED: use gcnArchName instead
+gfx908:sramecc+:xnack- gcnArchNam AMD GCN Arch Name
+0 integrated APU vs dGPU
+1 cooperativeLaunch HIP device supports cooperative launch
+1 cooperativeMultiDeviceLaunch HIP device supports cooperative launch on multiple devices
+-16 maxTexture1DLinear Maximum size for 1D textures bound to linear memory
+16384 maxTexture1D Maximum number of elements in 1D images
+16384 maxTexture2D[0]16384 maxTexture2D[1] Maximum dimensions (width, height) of 2D images, in image elements
+16384 maxTexture3D[0]16384 maxTexture3D[1]8192 maxTexture3D[2] Maximum dimensions (width, height, depth) of 3D images, in image elements
+34342961152 memPitch Maximum pitch in bytes allowed by memory copies
+256 textureAlignment Alignment requirement for textures
+256 texturePitchAlignment Pitch alignment requirement for texture references bound to pitched memory
+0 kernelExecTimeoutEnabled Run time limit for kernels executed on the device
+0 ECCEnabled Device has ECC support enabled
+0 tccDriver 1:If device is Tesla device using TCC driver, else 0
+1 cooperativeMultiDeviceUnmatchedFunc HIP device supports cooperative launch on multiple devices with unmatched functions
+1 cooperativeMultiDeviceUnmatchedGridDim HIP device supports cooperative launch on multiple devices with unmatched grid dimensions
+1 cooperativeMultiDeviceUnmatchedBlockDim HIP device supports cooperative launch on multiple devices with unmatched block dimensions
+1 cooperativeMultiDeviceUnmatchedSharedMem HIP device supports cooperative launch on multiple devices with unmatched shared memories
+1 isLargeBar 1: if it is a large PCI bar device, else 0
+2 asicRevision Revision of the GPU in this device
+0 managedMemory Device supports allocating managed memory on this system
+0 directManagedMemAccessFromHost Host can directly access managed memory on the device without migration
+0 concurrentManagedAccess Device can coherently access managed memory concurrently with the CPU
+0 pageableMemoryAccess Device supports coherently accessing pageable memory without calling hipHostRegister on it
+0 pageableMemoryAccessUsesHostPageTables Device accesses pageable memory via the host's page tables
+******************************************************************************
+******************************************************************************
+Device number: 1
+Arcturus GL-XL [AMD Instinct MI100] name Device name
+34342961152 totalGlobalMem Size of global memory region (in bytes)
+65536 sharedMemPerBlock Size of shared memory region (in bytes)
+65536 regsPerBlock Registers per block
+64 warpSize Warp size
+1024 maxThreadsPerBlock Max work items per work group or workgroup max size
+1024 maxThreadsDim[0]1024 maxThreadsDim[1]1024 maxThreadsDim[2] Max number of threads in each dimension (XYZ) of a block
+2147483647 maxGridSize[0]2147483647 maxGridSize[1]2147483647 maxGridSize[2] Max grid dimensions (XYZ)
+1502000 clockRate Max clock frequency of the multiProcessors in khz
+1200000 memoryClockRate Max global memory clock frequency in khz
+4096 memoryBusWidth Global memory bus width in bits
+34342961152 totalConstMem Size of shared memory region (in bytes)
+9 major Major compute capability.  On HCC, this is an approximation and features may differ from CUDA CC.  See the arch feature flags for portable ways to query feature caps
+0 minor Minor compute capability.  On HCC, this is an approximation and features may differ from CUDA CC.  See the arch feature flags for portable ways to query feature caps
+120 multiProcessorCount Number of multi-processors (compute units)
+0 l2CacheSize L2 cache size
+2560 maxThreadsPerMultiProcessor Maximum resident threads per multi-processor
+0 computeMode Compute mode
+1000000 clockInstructionRate Frequency in khz of the timer used by the device-side "clock*" instructions.  New for HIP
+1 concurrentKernels Device can possibly execute multiple kernels concurrently
+0 pciDomainID PCI Domain ID
+135 pciBusID PCI Bus ID
+0 pciDeviceID PCI Device ID
+65536 maxSharedMemoryPerMultiProcessor Maximum Shared Memory Per Multiprocessor
+0 isMultiGpuBoard 1 if device is on a multi-GPU board, 0 if not
+1 canMapHostMemory Check whether HIP can map host memory
+908 gcnArch DEPRECATED: use gcnArchName instead
+gfx908:sramecc+:xnack- gcnArchNam AMD GCN Arch Name
+0 integrated APU vs dGPU
+1 cooperativeLaunch HIP device supports cooperative launch
+1 cooperativeMultiDeviceLaunch HIP device supports cooperative launch on multiple devices
+-16 maxTexture1DLinear Maximum size for 1D textures bound to linear memory
+16384 maxTexture1D Maximum number of elements in 1D images
+16384 maxTexture2D[0]16384 maxTexture2D[1] Maximum dimensions (width, height) of 2D images, in image elements
+16384 maxTexture3D[0]16384 maxTexture3D[1]8192 maxTexture3D[2] Maximum dimensions (width, height, depth) of 3D images, in image elements
+34342961152 memPitch Maximum pitch in bytes allowed by memory copies
+256 textureAlignment Alignment requirement for textures
+256 texturePitchAlignment Pitch alignment requirement for texture references bound to pitched memory
+0 kernelExecTimeoutEnabled Run time limit for kernels executed on the device
+0 ECCEnabled Device has ECC support enabled
+0 tccDriver 1:If device is Tesla device using TCC driver, else 0
+1 cooperativeMultiDeviceUnmatchedFunc HIP device supports cooperative launch on multiple devices with unmatched functions
+1 cooperativeMultiDeviceUnmatchedGridDim HIP device supports cooperative launch on multiple devices with unmatched grid dimensions
+1 cooperativeMultiDeviceUnmatchedBlockDim HIP device supports cooperative launch on multiple devices with unmatched block dimensions
+1 cooperativeMultiDeviceUnmatchedSharedMem HIP device supports cooperative launch on multiple devices with unmatched shared memories
+1 isLargeBar 1: if it is a large PCI bar device, else 0
+2 asicRevision Revision of the GPU in this device
+0 managedMemory Device supports allocating managed memory on this system
+0 directManagedMemAccessFromHost Host can directly access managed memory on the device without migration
+0 concurrentManagedAccess Device can coherently access managed memory concurrently with the CPU
+0 pageableMemoryAccess Device supports coherently accessing pageable memory without calling hipHostRegister on it
+0 pageableMemoryAccessUsesHostPageTables Device accesses pageable memory via the host's page tables
+******************************************************************************
+******************************************************************************
+Device number: 2
+Arcturus GL-XL [AMD Instinct MI100] name Device name
+34342961152 totalGlobalMem Size of global memory region (in bytes)
+65536 sharedMemPerBlock Size of shared memory region (in bytes)
+65536 regsPerBlock Registers per block
+64 warpSize Warp size
+1024 maxThreadsPerBlock Max work items per work group or workgroup max size
+1024 maxThreadsDim[0]1024 maxThreadsDim[1]1024 maxThreadsDim[2] Max number of threads in each dimension (XYZ) of a block
+2147483647 maxGridSize[0]2147483647 maxGridSize[1]2147483647 maxGridSize[2] Max grid dimensions (XYZ)
+1502000 clockRate Max clock frequency of the multiProcessors in khz
+1200000 memoryClockRate Max global memory clock frequency in khz
+4096 memoryBusWidth Global memory bus width in bits
+34342961152 totalConstMem Size of shared memory region (in bytes)
+9 major Major compute capability.  On HCC, this is an approximation and features may differ from CUDA CC.  See the arch feature flags for portable ways to query feature caps
+0 minor Minor compute capability.  On HCC, this is an approximation and features may differ from CUDA CC.  See the arch feature flags for portable ways to query feature caps
+120 multiProcessorCount Number of multi-processors (compute units)
+0 l2CacheSize L2 cache size
+2560 maxThreadsPerMultiProcessor Maximum resident threads per multi-processor
+0 computeMode Compute mode
+1000000 clockInstructionRate Frequency in khz of the timer used by the device-side "clock*" instructions.  New for HIP
+1 concurrentKernels Device can possibly execute multiple kernels concurrently
+0 pciDomainID PCI Domain ID
+72 pciBusID PCI Bus ID
+0 pciDeviceID PCI Device ID
+65536 maxSharedMemoryPerMultiProcessor Maximum Shared Memory Per Multiprocessor
+0 isMultiGpuBoard 1 if device is on a multi-GPU board, 0 if not
+1 canMapHostMemory Check whether HIP can map host memory
+908 gcnArch DEPRECATED: use gcnArchName instead
+gfx908:sramecc+:xnack- gcnArchNam AMD GCN Arch Name
+0 integrated APU vs dGPU
+1 cooperativeLaunch HIP device supports cooperative launch
+1 cooperativeMultiDeviceLaunch HIP device supports cooperative launch on multiple devices
+-16 maxTexture1DLinear Maximum size for 1D textures bound to linear memory
+16384 maxTexture1D Maximum number of elements in 1D images
+16384 maxTexture2D[0]16384 maxTexture2D[1] Maximum dimensions (width, height) of 2D images, in image elements
+16384 maxTexture3D[0]16384 maxTexture3D[1]8192 maxTexture3D[2] Maximum dimensions (width, height, depth) of 3D images, in image elements
+34342961152 memPitch Maximum pitch in bytes allowed by memory copies
+256 textureAlignment Alignment requirement for textures
+256 texturePitchAlignment Pitch alignment requirement for texture references bound to pitched memory
+0 kernelExecTimeoutEnabled Run time limit for kernels executed on the device
+0 ECCEnabled Device has ECC support enabled
+0 tccDriver 1:If device is Tesla device using TCC driver, else 0
+1 cooperativeMultiDeviceUnmatchedFunc HIP device supports cooperative launch on multiple devices with unmatched functions
+1 cooperativeMultiDeviceUnmatchedGridDim HIP device supports cooperative launch on multiple devices with unmatched grid dimensions
+1 cooperativeMultiDeviceUnmatchedBlockDim HIP device supports cooperative launch on multiple devices with unmatched block dimensions
+1 cooperativeMultiDeviceUnmatchedSharedMem HIP device supports cooperative launch on multiple devices with unmatched shared memories
+1 isLargeBar 1: if it is a large PCI bar device, else 0
+2 asicRevision Revision of the GPU in this device
+0 managedMemory Device supports allocating managed memory on this system
+0 directManagedMemAccessFromHost Host can directly access managed memory on the device without migration
+0 concurrentManagedAccess Device can coherently access managed memory concurrently with the CPU
+0 pageableMemoryAccess Device supports coherently accessing pageable memory without calling hipHostRegister on it
+0 pageableMemoryAccessUsesHostPageTables Device accesses pageable memory via the host's page tables
+******************************************************************************
+******************************************************************************
+Device number: 3
+Arcturus GL-XL [AMD Instinct MI100] name Device name
+34342961152 totalGlobalMem Size of global memory region (in bytes)
+65536 sharedMemPerBlock Size of shared memory region (in bytes)
+65536 regsPerBlock Registers per block
+64 warpSize Warp size
+1024 maxThreadsPerBlock Max work items per work group or workgroup max size
+1024 maxThreadsDim[0]1024 maxThreadsDim[1]1024 maxThreadsDim[2] Max number of threads in each dimension (XYZ) of a block
+2147483647 maxGridSize[0]2147483647 maxGridSize[1]2147483647 maxGridSize[2] Max grid dimensions (XYZ)
+1502000 clockRate Max clock frequency of the multiProcessors in khz
+1200000 memoryClockRate Max global memory clock frequency in khz
+4096 memoryBusWidth Global memory bus width in bits
+34342961152 totalConstMem Size of shared memory region (in bytes)
+9 major Major compute capability.  On HCC, this is an approximation and features may differ from CUDA CC.  See the arch feature flags for portable ways to query feature caps
+0 minor Minor compute capability.  On HCC, this is an approximation and features may differ from CUDA CC.  See the arch feature flags for portable ways to query feature caps
+120 multiProcessorCount Number of multi-processors (compute units)
+0 l2CacheSize L2 cache size
+2560 maxThreadsPerMultiProcessor Maximum resident threads per multi-processor
+0 computeMode Compute mode
+1000000 clockInstructionRate Frequency in khz of the timer used by the device-side "clock*" instructions.  New for HIP
+1 concurrentKernels Device can possibly execute multiple kernels concurrently
+0 pciDomainID PCI Domain ID
+9 pciBusID PCI Bus ID
+0 pciDeviceID PCI Device ID
+65536 maxSharedMemoryPerMultiProcessor Maximum Shared Memory Per Multiprocessor
+0 isMultiGpuBoard 1 if device is on a multi-GPU board, 0 if not
+1 canMapHostMemory Check whether HIP can map host memory
+908 gcnArch DEPRECATED: use gcnArchName instead
+gfx908:sramecc+:xnack- gcnArchNam AMD GCN Arch Name
+0 integrated APU vs dGPU
+1 cooperativeLaunch HIP device supports cooperative launch
+1 cooperativeMultiDeviceLaunch HIP device supports cooperative launch on multiple devices
+-16 maxTexture1DLinear Maximum size for 1D textures bound to linear memory
+16384 maxTexture1D Maximum number of elements in 1D images
+16384 maxTexture2D[0]16384 maxTexture2D[1] Maximum dimensions (width, height) of 2D images, in image elements
+16384 maxTexture3D[0]16384 maxTexture3D[1]8192 maxTexture3D[2] Maximum dimensions (width, height, depth) of 3D images, in image elements
+34342961152 memPitch Maximum pitch in bytes allowed by memory copies
+256 textureAlignment Alignment requirement for textures
+256 texturePitchAlignment Pitch alignment requirement for texture references bound to pitched memory
+0 kernelExecTimeoutEnabled Run time limit for kernels executed on the device
+0 ECCEnabled Device has ECC support enabled
+0 tccDriver 1:If device is Tesla device using TCC driver, else 0
+1 cooperativeMultiDeviceUnmatchedFunc HIP device supports cooperative launch on multiple devices with unmatched functions
+1 cooperativeMultiDeviceUnmatchedGridDim HIP device supports cooperative launch on multiple devices with unmatched grid dimensions
+1 cooperativeMultiDeviceUnmatchedBlockDim HIP device supports cooperative launch on multiple devices with unmatched block dimensions
+1 cooperativeMultiDeviceUnmatchedSharedMem HIP device supports cooperative launch on multiple devices with unmatched shared memories
+1 isLargeBar 1: if it is a large PCI bar device, else 0
+2 asicRevision Revision of the GPU in this device
+0 managedMemory Device supports allocating managed memory on this system
+0 directManagedMemAccessFromHost Host can directly access managed memory on the device without migration
+0 concurrentManagedAccess Device can coherently access managed memory concurrently with the CPU
+0 pageableMemoryAccess Device supports coherently accessing pageable memory without calling hipHostRegister on it
+0 pageableMemoryAccessUsesHostPageTables Device accesses pageable memory via the host's page tables
+******************************************************************************
