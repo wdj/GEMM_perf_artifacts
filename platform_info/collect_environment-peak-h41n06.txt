@@ -1,0 +1,190 @@
+Wed Sep  8 14:31:27 EDT 2021
++ lsb_release -a
+./collect_environment.sh: line 10: lsb_release: command not found
++ uname -a
+Linux h41n06 4.18.0-193.46.1.el8_2.ppc64le #1 SMP Thu Feb 18 09:47:51 EST 2021 ppc64le ppc64le ppc64le GNU/Linux
++ lscpu
+Architecture:        ppc64le
+Byte Order:          Little Endian
+CPU(s):              176
+On-line CPU(s) list: 0-175
+Thread(s) per core:  4
+Core(s) per socket:  22
+Socket(s):           2
+NUMA node(s):        8
+Model:               2.1 (pvr 004e 1201)
+Model name:          POWER9, altivec supported
+CPU max MHz:         3800.0000
+CPU min MHz:         2300.0000
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            512K
+L3 cache:            10240K
+NUMA node0 CPU(s):   0-87
+NUMA node8 CPU(s):   88-175
+NUMA node250 CPU(s): 
+NUMA node251 CPU(s): 
+NUMA node252 CPU(s): 
+NUMA node253 CPU(s): 
+NUMA node254 CPU(s): 
+NUMA node255 CPU(s): 
++ cat /proc/meminfo
+MemTotal:       634123840 kB
+MemFree:        579921344 kB
+MemAvailable:   587392704 kB
+Buffers:             640 kB
+Cached:         21548800 kB
+SwapCached:            0 kB
+Active:         17221312 kB
+Inactive:        7544960 kB
+Active(anon):   13608960 kB
+Inactive(anon):  1978880 kB
+Active(file):    3612352 kB
+Inactive(file):  5566080 kB
+Unevictable:    16777216 kB
+Mlocked:        16777216 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               128 kB
+Writeback:             0 kB
+AnonPages:      19995648 kB
+Mapped:          1698624 kB
+Shmem:          12370880 kB
+KReclaimable:     650944 kB
+Slab:            5093184 kB
+SReclaimable:     650944 kB
+SUnreclaim:      4442240 kB
+KernelStack:       37056 kB
+PageTables:        12672 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    317061888 kB
+Committed_AS:   31130496 kB
+VmallocTotal:   549755813888 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+Percpu:           360448 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    393216 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:       26853376 kB
+CmaFree:        26853376 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
++ inxi -F -c0
+./collect_environment.sh: line 14: inxi: command not found
++ lsblk -a
+NAME       MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+nvme0n1    259:1    0   1.5T  0 disk 
+`-bb-cache 253:0    0 104.3G  0 lvm  /var/cache/fscache
++ lsscsi -s
+./collect_environment.sh: line 16: lsscsi: command not found
++ module list
+++ /sw/peak/lmod/8.2.10/libexec/lmod bash list
+
+Currently Loaded Modules:
+  1) xl/16.1.1-9-1                    3) hsi/5.0.2.p5    5) DefApps
+  2) spectrum-mpi/10.4.0.3-20210112   4) lsf-tools/2.0   6) cuda/11.0.3
+
+ 
+
++ eval 'MODULEPATH=/sw/peak/spack-envs/base/modules/spack/linux-rhel8-ppc64le/spectrum-mpi/10.4.0.3-20210112-rqtunzd/xl/16.1.1-9-1:/sw/peak/spack-envs/base/modules/spack/linux-rhel8-ppc64le/xl/16.1.1-9-1:/sw/peak/spack-envs/base/modules/spack/linux-rhel8-ppc64le/Core:/sw/peak/spack-envs/base/modules/site/Core:/sw/peak/modulefiles/core;' export 'MODULEPATH;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09InhsIixbIm1waSJdPSJzcGVjdHJ1bS1tcGkiLH0sbVQ9e0RlZkFwcHM9e1siZm4iXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc2l0ZS9Db3JlL0RlZkFwcHMubHVhIixbImZ1bGxOYW1lIl09IkRlZkFwcHMiLFsibG9hZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJEZWZBcHBzIix9LGN1ZGE9e1siZm4iXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc2l0ZS9Db3JlL2N1;' export '_ModuleTable001_;' '_ModuleTable002_=ZGEvMTEuMC4zIixbImZ1bGxOYW1lIl09ImN1ZGEvMTEuMC4zIixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxoc2k9e1siZm4iXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc2l0ZS9Db3JlL2hzaS81LjAuMi5wNS5sdWEiLFsiZnVsbE5hbWUiXT0iaHNpLzUuMC4yLnA1IixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iaHNpIix9LFsibHNmLXRvb2xzIl09e1siZm4iXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc2l0ZS9Db3JlL2xzZi10b29scy8y;' export '_ModuleTable002_;' '_ModuleTable003_=LjAubHVhIixbImZ1bGxOYW1lIl09ImxzZi10b29scy8yLjAiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJsc2YtdG9vbHMiLH0sWyJzcGVjdHJ1bS1tcGkiXT17WyJmbiJdPSIvc3cvcGVhay9zcGFjay1lbnZzL2Jhc2UvbW9kdWxlcy9zcGFjay9saW51eC1yaGVsOC1wcGM2NGxlL3hsLzE2LjEuMS05LTEvc3BlY3RydW0tbXBpLzEwLjQuMC4zLTIwMjEwMTEyLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuNC4wLjMtMjAyMTAxMTIiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJz;' export '_ModuleTable003_;' '_ModuleTable004_=cGVjdHJ1bS1tcGkiLH0seGw9e1siZm4iXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc2l0ZS9Db3JlL3hsLzE2LjEuMS05LTEubHVhIixbImZ1bGxOYW1lIl09InhsLzE2LjEuMS05LTEiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJ4bCIsfSx9LG1wYXRoQT17Ii9zdy9wZWFrL3NwYWNrLWVudnMvYmFzZS9tb2R1bGVzL3NwYWNrL2xpbnV4LXJoZWw4LXBwYzY0bGUvc3BlY3RydW0tbXBpLzEwLjQuMC4zLTIwMjEwMTEyLXJxdHVuemQveGwvMTYuMS4xLTktMSIsIi9zdy9wZWFrL3NwYWNrLWVudnMvYmFzZS9tb2R1bGVzL3NwYWNrL2xpbnV4LXJoZWw4LXBwYzY0bGUv;' export '_ModuleTable004_;' '_ModuleTable005_=eGwvMTYuMS4xLTktMSIsIi9zdy9wZWFrL3NwYWNrLWVudnMvYmFzZS9tb2R1bGVzL3NwYWNrL2xpbnV4LXJoZWw4LXBwYzY0bGUvQ29yZSIsIi9zdy9wZWFrL3NwYWNrLWVudnMvYmFzZS9tb2R1bGVzL3NpdGUvQ29yZSIsIi9zdy9wZWFrL21vZHVsZWZpbGVzL2NvcmUiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc3BhY2svbGludXgtcmhlbDgtcHBjNjRsZS9Db3JlOi9zdy9wZWFrL3NwYWNrLWVudnMvYmFzZS9tb2R1bGVzL3NpdGUvQ29yZTovc3cvcGVhay9tb2R1bGVmaWxlcy9jb3JlIix9;' export '_ModuleTable005_;' '_ModuleTable_Sz_=5;' export '_ModuleTable_Sz_;'
+++ MODULEPATH=/sw/peak/spack-envs/base/modules/spack/linux-rhel8-ppc64le/spectrum-mpi/10.4.0.3-20210112-rqtunzd/xl/16.1.1-9-1:/sw/peak/spack-envs/base/modules/spack/linux-rhel8-ppc64le/xl/16.1.1-9-1:/sw/peak/spack-envs/base/modules/spack/linux-rhel8-ppc64le/Core:/sw/peak/spack-envs/base/modules/site/Core:/sw/peak/modulefiles/core
+++ export MODULEPATH
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09InhsIixbIm1waSJdPSJzcGVjdHJ1bS1tcGkiLH0sbVQ9e0RlZkFwcHM9e1siZm4iXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc2l0ZS9Db3JlL0RlZkFwcHMubHVhIixbImZ1bGxOYW1lIl09IkRlZkFwcHMiLFsibG9hZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJEZWZBcHBzIix9LGN1ZGE9e1siZm4iXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc2l0ZS9Db3JlL2N1
+++ export _ModuleTable001_
+++ _ModuleTable002_=ZGEvMTEuMC4zIixbImZ1bGxOYW1lIl09ImN1ZGEvMTEuMC4zIixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3VkYSIsfSxoc2k9e1siZm4iXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc2l0ZS9Db3JlL2hzaS81LjAuMi5wNS5sdWEiLFsiZnVsbE5hbWUiXT0iaHNpLzUuMC4yLnA1IixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iaHNpIix9LFsibHNmLXRvb2xzIl09e1siZm4iXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc2l0ZS9Db3JlL2xzZi10b29scy8y
+++ export _ModuleTable002_
+++ _ModuleTable003_=LjAubHVhIixbImZ1bGxOYW1lIl09ImxzZi10b29scy8yLjAiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJsc2YtdG9vbHMiLH0sWyJzcGVjdHJ1bS1tcGkiXT17WyJmbiJdPSIvc3cvcGVhay9zcGFjay1lbnZzL2Jhc2UvbW9kdWxlcy9zcGFjay9saW51eC1yaGVsOC1wcGM2NGxlL3hsLzE2LjEuMS05LTEvc3BlY3RydW0tbXBpLzEwLjQuMC4zLTIwMjEwMTEyLmx1YSIsWyJmdWxsTmFtZSJdPSJzcGVjdHJ1bS1tcGkvMTAuNC4wLjMtMjAyMTAxMTIiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJz
+++ export _ModuleTable003_
+++ _ModuleTable004_=cGVjdHJ1bS1tcGkiLH0seGw9e1siZm4iXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc2l0ZS9Db3JlL3hsLzE2LjEuMS05LTEubHVhIixbImZ1bGxOYW1lIl09InhsLzE2LjEuMS05LTEiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJ4bCIsfSx9LG1wYXRoQT17Ii9zdy9wZWFrL3NwYWNrLWVudnMvYmFzZS9tb2R1bGVzL3NwYWNrL2xpbnV4LXJoZWw4LXBwYzY0bGUvc3BlY3RydW0tbXBpLzEwLjQuMC4zLTIwMjEwMTEyLXJxdHVuemQveGwvMTYuMS4xLTktMSIsIi9zdy9wZWFrL3NwYWNrLWVudnMvYmFzZS9tb2R1bGVzL3NwYWNrL2xpbnV4LXJoZWw4LXBwYzY0bGUv
+++ export _ModuleTable004_
+++ _ModuleTable005_=eGwvMTYuMS4xLTktMSIsIi9zdy9wZWFrL3NwYWNrLWVudnMvYmFzZS9tb2R1bGVzL3NwYWNrL2xpbnV4LXJoZWw4LXBwYzY0bGUvQ29yZSIsIi9zdy9wZWFrL3NwYWNrLWVudnMvYmFzZS9tb2R1bGVzL3NpdGUvQ29yZSIsIi9zdy9wZWFrL21vZHVsZWZpbGVzL2NvcmUiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3N3L3BlYWsvc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc3BhY2svbGludXgtcmhlbDgtcHBjNjRsZS9Db3JlOi9zdy9wZWFrL3NwYWNrLWVudnMvYmFzZS9tb2R1bGVzL3NpdGUvQ29yZTovc3cvcGVhay9tb2R1bGVmaWxlcy9jb3JlIix9
+++ export _ModuleTable005_
+++ _ModuleTable_Sz_=5
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ nvidia-smi
+Wed Sep  8 14:28:23 2021       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 450.80.02    Driver Version: 450.80.02    CUDA Version: 11.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000004:04:00.0 Off |                    0 |
+| N/A   28C    P0    36W / 300W |      0MiB / 16160MiB |      0%   E. Process |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
++ lshw -short -quiet -sanitize
++ cat
+./collect_environment.sh: line 19: lshw: command not found
++ lspci
+0000:00:00.0 PCI bridge: IBM POWER9 Host Bridge (PHB4)
+0000:01:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller 172Xa/172Xb (rev 01)
+0001:00:00.0 PCI bridge: IBM POWER9 Host Bridge (PHB4)
+0001:01:00.0 USB controller: Texas Instruments TUSB73x0 SuperSpeed USB 3.0 xHCI Host Controller (rev 02)
+0002:00:00.0 PCI bridge: IBM POWER9 Host Bridge (PHB4)
+0002:01:00.0 PCI bridge: ASPEED Technology, Inc. AST1150 PCI-to-PCI Bridge (rev 04)
+0002:02:00.0 VGA compatible controller: ASPEED Technology, Inc. ASPEED Graphics Family (rev 41)
+0003:00:00.0 PCI bridge: IBM POWER9 Host Bridge (PHB4)
+0003:01:00.0 Infiniband controller: Mellanox Technologies MT28800 Family [ConnectX-5 Ex]
+0003:01:00.1 Infiniband controller: Mellanox Technologies MT28800 Family [ConnectX-5 Ex]
+0004:00:00.0 PCI bridge: IBM POWER9 Host Bridge (PHB4)
+0004:01:00.0 PCI bridge: PLX Technology, Inc. Device 8725 (rev ca)
+0004:01:00.1 System peripheral: PLX Technology, Inc. Device 87d0 (rev ca)
+0004:01:00.2 System peripheral: PLX Technology, Inc. Device 87d0 (rev ca)
+0004:01:00.3 System peripheral: PLX Technology, Inc. Device 87d0 (rev ca)
+0004:01:00.4 System peripheral: PLX Technology, Inc. Device 87d0 (rev ca)
+0004:02:02.0 PCI bridge: PLX Technology, Inc. Device 8725 (rev ca)
+0004:02:0a.0 PCI bridge: PLX Technology, Inc. Device 8725 (rev ca)
+0004:02:0b.0 PCI bridge: PLX Technology, Inc. Device 8725 (rev ca)
+0004:02:0c.0 PCI bridge: PLX Technology, Inc. Device 8725 (rev ca)
+0004:03:00.0 SATA controller: Marvell Technology Group Ltd. 88SE9235 PCIe 2.0 x2 4-port SATA 6 Gb/s Controller (rev 11)
+0004:04:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+0004:05:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+0004:06:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+0005:00:00.0 PCI bridge: IBM POWER9 Host Bridge (PHB4)
+0005:01:00.0 Ethernet controller: Broadcom Inc. and subsidiaries NetXtreme BCM5719 Gigabit Ethernet PCIe (rev 01)
+0005:01:00.1 Ethernet controller: Broadcom Inc. and subsidiaries NetXtreme BCM5719 Gigabit Ethernet PCIe (rev 01)
+0006:00:00.0 Bridge: IBM Device 04ea (rev 01)
+0006:00:00.1 Bridge: IBM Device 04ea (rev 01)
+0006:00:01.0 Bridge: IBM Device 04ea (rev 01)
+0006:00:01.1 Bridge: IBM Device 04ea (rev 01)
+0006:00:02.0 Bridge: IBM Device 04ea (rev 01)
+0006:00:02.1 Bridge: IBM Device 04ea (rev 01)
+0007:00:00.0 Bridge: IBM Device 04ea (rev 01)
+0007:00:00.1 Bridge: IBM Device 04ea (rev 01)
+0007:00:01.0 Bridge: IBM Device 04ea (rev 01)
+0007:00:01.1 Bridge: IBM Device 04ea (rev 01)
+0007:00:02.0 Bridge: IBM Device 04ea (rev 01)
+0007:00:02.1 Bridge: IBM Device 04ea (rev 01)
+0030:00:00.0 PCI bridge: IBM POWER9 Host Bridge (PHB4)
+0033:00:00.0 PCI bridge: IBM POWER9 Host Bridge (PHB4)
+0033:01:00.0 Infiniband controller: Mellanox Technologies MT28800 Family [ConnectX-5 Ex]
+0033:01:00.1 Infiniband controller: Mellanox Technologies MT28800 Family [ConnectX-5 Ex]
+0034:00:00.0 PCI bridge: IBM POWER9 Host Bridge (PHB4)
+0035:00:00.0 PCI bridge: IBM POWER9 Host Bridge (PHB4)
+0035:01:00.0 PCI bridge: PLX Technology, Inc. Device 8725 (rev ca)
+0035:02:04.0 PCI bridge: PLX Technology, Inc. Device 8725 (rev ca)
+0035:02:05.0 PCI bridge: PLX Technology, Inc. Device 8725 (rev ca)
+0035:02:0d.0 PCI bridge: PLX Technology, Inc. Device 8725 (rev ca)
+0035:03:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+0035:04:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)
+0035:05:00.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB] (rev a1)

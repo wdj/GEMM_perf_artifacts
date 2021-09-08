@@ -1,0 +1,291 @@
+Wed Sep  8 18:24:02 UTC 2021
+LC_ALL=C
+HOSTTYPE=x86_64
+SSH_CONNECTION=10.17.6.82 54540 10.17.6.157 22
+LESSCLOSE=lessclose.sh %s %s
+XKEYSYMDB=/usr/X11R6/lib/X11/XKeysymDB
+_=/usr/bin/env
+LANG=en_US.UTF-8
+WINDOWMANAGER=xterm
+LESS=-M -I -R
+HOSTNAME=iris07
+CSHEDIT=emacs
+EDITOR=vi
+GPG_TTY=/dev/pts/0
+LESS_ADVANCED_PREPROCESSOR=no
+COLORTERM=1
+MACHTYPE=x86_64-suse-linux
+MINICOM=-c on
+OSTYPE=linux
+XDG_SESSION_ID=155
+MODULES_CMD=/usr/lib64/Modules/modulecmd.tcl
+USER=USER
+MODULES_SET_SHELL_STARTUP=0
+PAGER=less
+COBALT_JOBID=375494
+MORE=-sl
+PWD=/home/USER
+HOME=/home/USER
+HOST=iris07
+SSH_CLIENT=10.17.6.82 54540 22
+XNLSPATH=/usr/X11R6/lib/X11/nls
+XDG_SESSION_TYPE=tty
+https_proxy=http://proxy.ftm.alcf.anl.gov:3128
+XDG_DATA_DIRS=/usr/share
+http_proxy=http://proxy.ftm.alcf.anl.gov:3128
+SVN_EDITOR=vi
+LIBGL_DEBUG=quiet
+COBALT_NODEFILE=/var/tmp/cobalt.375494
+PROFILEREAD=true
+LOADEDMODULES=
+no_proxy=localhost, 127.0.0.1
+SSH_TTY=/dev/pts/0
+NO_PROXY=localhost, 127.0.0.1
+MAIL=/var/spool/mail/USER
+SOCKS_PROXY=
+VISUAL=vi
+LESSKEY=/etc/lesskey.bin
+SHELL=/bin/bash
+TERM=xterm-256color
+XDG_SESSION_CLASS=user
+socks_proxy=
+TMOUT=1800
+SHLVL=2
+G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-15,CP1252
+MANPATH=/usr/local/man:/usr/share/man
+hostnickname=iris07
+SOCKS5_SERVER=
+gopher_proxy=
+MODULEPATH=/usr/share/modules
+LOGNAME=USER
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/10578/bus
+XDG_RUNTIME_DIR=/run/user/10578
+MODULEPATH_modshare=/usr/share/modules:1
+XDG_CONFIG_DIRS=/etc/xdg
+PATH=.:/Applications/CMake.app/Contents/bin:.:/home/USER/bin:/home/USER/bin/common:/usr/local/texlive/2017/bin/x86_64-darwin:.:/Applications/CMake.app/Contents/bin:.:/home/USER/bin:/home/USER/bin/common:/usr/local/texlive/2017/bin/x86_64-darwin:/usr/local/bin:/usr/bin:/bin:/usr/lpp/mmfs/bin:/home/USER/.local/bin:/home/USER/bin
+MODULESHOME=/usr
+G_BROKEN_FILENAMES=1
+HISTSIZE=1000
+ftp_proxy=http://proxy.ftm.alcf.anl.gov:3128
+CPU=x86_64
+SSH_SENDS_LOCALE=yes
+LESSOPEN=lessopen.sh %s
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1
+}
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh /usr/lib64/Modules/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /usr/lib64/Modules/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}
+BASH_FUNC_switchml%%=() {  typeset swfound=1;
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ typeset swname='main';
+ if [ -e /usr/lib64/Modules//modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname='compatibility';
+ if [ -e /usr/lib64/Modules//modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo "Switching to Modules $swname version";
+ source /usr/share/Modules/init/bash;
+ else
+ echo "Cannot switch to Modules $swname version, command not found";
+ return 1;
+ fi
+}
+BASH_FUNC_mc%%=() {  . /usr/share/mc/mc-wrapper.sh
+}
+BASH_FUNC_ml%%=() {  module ml "$@"
+}
++ lsb_release -a
+LSB Version:	n/a
+Distributor ID:	openSUSE
+Description:	openSUSE Leap 15.3
+Release:	15.3
+Codename:	n/a
++ uname -a
+Linux iris07 5.3.18-59.16-default #1 SMP Thu Jul 15 11:28:57 UTC 2021 (0b62bdb) x86_64 x86_64 x86_64 GNU/Linux
++ lscpu
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   39 bits physical, 48 bits virtual
+CPU(s):                          8
+On-line CPU(s) list:             0-7
+Thread(s) per core:              2
+Core(s) per socket:              4
+Socket(s):                       1
+NUMA node(s):                    1
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           94
+Model name:                      Intel(R) Xeon(R) CPU E3-1585 v5 @ 3.50GHz
+Stepping:                        3
+CPU MHz:                         3795.367
+CPU max MHz:                     3900.0000
+CPU min MHz:                     800.0000
+BogoMIPS:                        6999.82
+Virtualization:                  VT-x
+L1d cache:                       128 KiB
+L1i cache:                       128 KiB
+L2 cache:                        1 MiB
+L3 cache:                        8 MiB
+NUMA node0 CPU(s):               0-7
+Vulnerability Itlb multihit:     KVM: Mitigation: VMX disabled
+Vulnerability L1tf:              Mitigation; PTE Inversion; VMX vulnerable
+Vulnerability Mds:               Vulnerable; SMT vulnerable
+Vulnerability Meltdown:          Vulnerable
+Vulnerability Spec store bypass: Vulnerable
+Vulnerability Spectre v1:        Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
+Vulnerability Spectre v2:        Vulnerable, IBPB: disabled, STIBP: disabled
+Vulnerability Srbds:             Vulnerable: No microcode
+Vulnerability Tsx async abort:   Vulnerable
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe sysc
+                                 all nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pcl
+                                 mulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadli
+                                 ne_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single ssbd ibrs ibpb stibp tpr_shadow 
+                                 vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap clflushop
+                                 t intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
++ cat /proc/meminfo
+MemTotal:       65113204 kB
+MemFree:        34983508 kB
+MemAvailable:   62844972 kB
+Buffers:          362512 kB
+Cached:         27406424 kB
+SwapCached:            0 kB
+Active:         13065480 kB
+Inactive:       14953464 kB
+Active(anon):     251088 kB
+Inactive(anon):      148 kB
+Active(file):   12814392 kB
+Inactive(file): 14953316 kB
+Unevictable:     1048780 kB
+Mlocked:         1048656 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               564 kB
+Writeback:             0 kB
+AnonPages:       1298676 kB
+Mapped:           225268 kB
+Shmem:              1228 kB
+KReclaimable:     822200 kB
+Slab:             905684 kB
+SReclaimable:     822200 kB
+SUnreclaim:        83484 kB
+KernelStack:        7524 kB
+PageTables:         9952 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    32556600 kB
+Committed_AS:    1508180 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       79008 kB
+VmallocChunk:          0 kB
+Percpu:             2272 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:   1163264 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      266508 kB
+DirectMap2M:    17336320 kB
+DirectMap1G:    50331648 kB
++ inxi -F -c0
+./collect_environment.sh: line 14: inxi: command not found
++ lsblk -a
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+nvme0n1     259:0    0 238.5G  0 disk 
+|-nvme0n1p1 259:3    0    64G  0 part /
+`-nvme0n1p2 259:4    0 174.5G  0 part /tmp
++ lsscsi -s
++ module list
++ _module_raw list
++ unset _mlshdbg
++ '[' 0 = 1 ']'
++ unset _mlre _mlIFS
++ '[' -n x ']'
++ _mlIFS=' 	
+'
++ IFS=' '
++ '[' -n '' ']'
+++ /usr/bin/tclsh /usr/lib64/Modules/modulecmd.tcl bash list
+No Modulefiles Currently Loaded.
++ eval
++ _mlstatus=0
++ '[' -n x ']'
++ IFS=' 	
+'
++ unset _mlre _mlv _mlrv _mlIFS
++ '[' -n '' ']'
++ unset _mlshdbg
++ return 0
++ nvidia-smi
+./collect_environment.sh: line 18: nvidia-smi: command not found
++ lshw -short -quiet -sanitize
++ cat
+./collect_environment.sh: line 19: lshw: command not found
++ lspci
+./collect_environment.sh: line 19: lspci: command not found

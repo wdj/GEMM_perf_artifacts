@@ -1,0 +1,632 @@
+Wed Sep  8 14:33:57 EDT 2021
+__LMOD_REF_COUNT_PE_LIBSCI_REQUIRED_PRODUCTS=PE_MPICH:1
+__LMOD_REF_COUNT_INCLUDE_PATH_AARCH64=/opt/cray/pe/cce/12.0.1/cce/aarch64/include/craylibs:1
+ASSEMBLER_AARCH64=/opt/cray/pe/cce/12.0.1/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin/as
+CRAY_LMOD_MPI=cray-mpich/8.0
+SLURM_MPI_TYPE=cray_shasta
+LMOD_FAMILY_CRAYPE_NETWORK_VERSION=false
+LC_ALL=C
+LD_LIBRARY_PATH=/opt/rocm-4.2.0/lib64:/opt/rocm-4.2.0/lib:/opt/rocm-4.2.0/llvm/lib:/opt/cray/pe/papi/6.0.0.7/lib64:/opt/cray/libfabric/1.11.0.4.75/lib64
+__LMOD_REF_COUNT_PE_CRAYCLANG_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/21.06.1.1/CRAY/9.0/x86_64/lib/pkgconfig:1;/opt/cray/pe/mpich/8.1.7/ofi/crayclang/10.0/lib/pkgconfig:1
+HOSTTYPE=x86_64
+SRUN_DEBUG=3
+SLURM_STEP_ID=0
+CRAY_DSMML_ROOTDIR=/opt/cray/pe/dsmml/0.1.5
+CRAY_DSMML_DIR=/opt/cray/pe/dsmml/0.1.5/dsmml
+SLURM_NODEID=0
+SLURM_TASK_PID=41091
+__LMOD_REF_COUNT_PATH=/opt/rocm-4.2.0/bin:1;/opt/conda/bin:2;/data/opt/splunk/bin:2;.:2;/ccs/home/USER/bin:3;/ccs/home/USER/bin/common:2;/opt/cray/pe/mpich/8.1.7/ofi/crayclang/10.0/bin:1;/opt/cray/pe/craype/2.7.8/bin:1;/opt/cray/pe/cce/12.0.1/binutils/x86_64/x86_64-pc-linux-gnu/bin:1;/opt/cray/pe/cce/12.0.1/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/../bin:1;/opt/cray/pe/cce/12.0.1/utils/x86_64/bin:1;/opt/cray/pe/cce/12.0.1/cce-clang/x86_64/bin:1;/opt/cray/pe/perftools/21.05.0/bin:1;/opt/cray/pe/papi/6.0.0.7/bin:1;/opt/cray/libfabric/1.11.0.4.75/bin:1;/opt/clmgr/sbin:1;/opt/clmgr/bin:1;/opt/sgi/sbin:1;/opt/sgi/bin:1;/usr/local/bin:1;/usr/bin:1;/bin:2;/opt/bin:1;/opt/c3/bin:1;/opt/puppetlabs/bin:1;/sbin:1;/opt/cray/pe/bin:1;/lustre/atlas1/bif102/proj-shared/comet:2
+_ModuleTable002_=ZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IkRlZkFwcHMiLH0sWyJQcmdFbnYtY3JheSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvUHJnRW52LWNyYXkvOC4xLjAubHVhIixbImZ1bGxOYW1lIl09IlByZ0Vudi1jcmF5LzguMS4wIixbImxvYWRPcmRlciJdPTEzLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IlByZ0Vudi1jcmF5Iix9LGNjZT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NjZS8xMi4wLjEubHVhIixbImZ1bGxOYW1lIl09ImNjZS8xMi4wLjEiLFsibG9hZE9yZGVyIl09OCxwcm9wVD17fSxbInN0YWNr
+PE_LIBSCI_OMP_REQUIRES=
+SSH_CONNECTION=160.91.195.68 47802 128.219.141.42 22
+XAUTHLOCALHOSTNAME=login1
+LESSCLOSE=lessclose.sh %s %s
+CRAY_LD_LIBRARY_PATH=/opt/cray/pe/libsci/21.06.1.1/CRAY/9.0/x86_64/lib:/opt/cray/pe/mpich/8.1.7/ofi/crayclang/10.0/lib:/opt/cray/pe/dsmml/0.1.5/dsmml/lib:/opt/cray/pe/cce/12.0.1/cce-clang/x86_64/lib:/opt/cray/pe/cce/12.0.1/cce/x86_64/lib:/opt/cray/pe/pmi/6.0.12/lib:/opt/cray/pe/perftools/21.05.0/lib64
+HIP_PLATFORM=amd
+XKEYSYMDB=/usr/X11R6/lib/X11/XKeysymDB
+SLURM_PRIO_PROCESS=0
+PE_ENV=CRAY
+LINKER_AARCH64=/opt/cray/pe/cce/12.0.1/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin/ld
+__LMOD_REF_COUNT_PE_DSMML_PKGCONFIG_LIBS=dsmml:1
+SLURM_CPU_BIND_VERBOSE=quiet
+__LMOD_REF_COUNT_PE_FORTRAN_PKGCONFIG_LIBS=mpichf90:1
+LMOD_FAMILY_CRAYPE_CPU=craype-x86-rome
+CRAYPAT_LD_LIBRARY_PATH=/opt/cray/pe/gcc-libs:/opt/cray/gcc-libs:/opt/cray/pe/perftools/21.05.0/lib64
+CRAY_LMOD_COMPILER=crayclang/10.0
+LMOD_MODULERCFILE=/sw/spock/lmod/etc/rc.lua
+FTN_X86_64=/opt/cray/pe/cce/12.0.1/cce/x86_64
+CRAY_DSMML_PREFIX=/opt/cray/pe/dsmml/0.1.5/dsmml
+PE_PRODUCT_LIST=CRAY_LIBSCI:CRAYPE:CRAY_PMI:CRAYPE_X86_ROME:PERFTOOLS:CRAYPAT
+CRAYPAT_ROOT=/opt/cray/pe/perftools/21.05.0
+LMOD_FAMILY_MPI_VERSION=8.1.7
+_=/usr/bin/env
+PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.7/ofi/crayclang/10.0/lib
+PE_LIBSCI_MODULE_NAME=cray-libsci/21.06.1.1
+PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.7/gtl/lib
+LANG=en_US.UTF-8
+PE_LIBSCI_GENCOMPILERS_CRAY_x86_64=9.0
+LMOD_SYSTEM_NAME=spock
+CRAY_BINUTILS_ROOT_X86_64=/opt/cray/pe/cce/12.0.1/binutils/x86_64/x86_64-pc-linux-gnu/../
+SLURM_SUBMIT_DIR=/autofs/nccs-svm1_home2/USER
+MEMBERWORK=/gpfs/alpine/scratch/USER
+PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.7/gtl/lib
+PE_DSMML_MODULE_NAME=cray-dsmml
+WINDOWMANAGER=xterm
+_ModuleTable008_=dGl2ZSIsWyJ1c2VyTmFtZSJdPSJsaWJmYWJyaWMiLH0sWyJwZXJmdG9vbHMtYmFzZSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvcGVyZnRvb2xzLWJhc2UvMjEuMDUuMC5sdWEiLFsiZnVsbE5hbWUiXT0icGVyZnRvb2xzLWJhc2UvMjEuMDUuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InBlcmZ0b29scy1iYXNlIix9LHJvY209e1siZm4iXT0iL3N3L3Nwb2NrL21vZHVsZWZpbGVzL3JvY20vNC4yLjAubHVhIixbImZ1bGxOYW1lIl09InJvY20vNC4yLjAiLFsibG9hZE9yZGVyIl09MTUscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1
+LESS=-M -I -R
+PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda
+DISPLAY=localhost:10.0
+LMOD_FAMILY_COMPILER_VERSION=12.0.1
+HIP_DEVICE_LIB_PATH=/opt/rocm-4.2.0/amdgcn/bitcode
+HOSTNAME=login1
+LMOD_SYSTEM_DEFAULT_MODULES=craype-x86-rome:craype-network-ofi:perftools-base:xpmem:cray-pmi:cray-pmi-lib:PrgEnv-cray:DefApps
+HIP_CLANG_PATH=/opt/rocm-4.2.0/llvm/bin
+__LMOD_REF_COUNT__LMFILES_=/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:1;/opt/cray/modulefiles/libfabric/1.11.0.4.75:1;/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:1;/opt/cray/pe/lmod/modulefiles/core/perftools-base/21.05.0.lua:1;/opt/cray/modulefiles/xpmem/2.2.40-2.1_2.44__g3cf3325.shasta:1;/opt/cray/pe/lmod/modulefiles/core/cray-pmi/6.0.12.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-pmi-lib/6.0.12.lua:1;/opt/cray/pe/lmod/modulefiles/core/cce/12.0.1.lua:1;/opt/cray/pe/lmod/modulefiles/core/craype/2.7.8.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.1.5.lua:1;/opt/cray/pe/lmod/modulefiles/comnet/crayclang/10.0/ofi/1.0/cray-mpich/8.1.7.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-libsci/21.06.1.1.lua:1;/opt/cray/pe/lmod/modulefiles/core/PrgEnv-cray/8.1.0.lua:1;/sw/spock/modulefiles/DefApps/default.lua:1;/sw/spock/modulefiles/rocm/4.2.0.lua:1
+ROCMINFO_PATH=/opt/rocm-4.2.0
+CSHEDIT=emacs
+SLURM_STEPID=0
+SLURM_SRUN_COMM_HOST=172.30.201.143
+EDITOR=vi
+SLURM_DISTRIBUTION=block
+GPG_TTY=/dev/pts/0
+LESS_ADVANCED_PREPROCESSOR=no
+COLORTERM=1
+GCC_X86_64=/opt/cray/pe/gcc/8.1.0/snos
+ASSEMBLER_X86_64=/opt/cray/pe/cce/12.0.1/binutils/x86_64/x86_64-pc-linux-gnu/bin/as
+ForwardX11=yes
+CRAY_PERFTOOLS_VERSION=21.05.0
+_ModuleTable007_=Y3JheXBlLXg4Ni1yb21lIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9jcmF5cGUteDg2LXJvbWUubHVhIixbImZ1bGxOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsfSxsaWJmYWJyaWM9e1siZm4iXT0iL29wdC9jcmF5L21vZHVsZWZpbGVzL2xpYmZhYnJpYy8xLjExLjAuNC43NSIsWyJmdWxsTmFtZSJdPSJsaWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFj
+__LMOD_REF_COUNT_NLSPATH=/opt/cray/pe/cce/12.0.1/cce/x86_64/share/nls/En/%N.cat:1
+ROCM_PATH=/opt/rocm-4.2.0
+LMOD_FAMILY_CRAYPE_NETWORK=craype-network-ofi
+COMPILERRT_PATH_X86_64=/opt/cray/pe/cce/12.0.1/cce-clang/x86_64/lib/clang/12.0.0/lib/linux
+LMOD_FAMILY_CRAYPE_VERSION=2.7.8
+PE_XPMEM_PKGCONFIG_LIBS=cray-xpmem
+APP2_STATE=21.05.0
+SLURM_PROCID=0
+LINKER_X86_64=/opt/cray/pe/cce/12.0.1/binutils/x86_64/x86_64-pc-linux-gnu/bin/ld
+SLURM_JOB_GID=1309
+MACHTYPE=x86_64-suse-linux
+PE_LIBSCI_FIXED_PRGENV=CRAYCLANG
+PALS_NODEID=0
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/rocm-4.2.0/lib64:1;/opt/rocm-4.2.0/lib:1;/opt/rocm-4.2.0/llvm/lib:1;/opt/cray/pe/papi/6.0.0.7/lib64:1;/opt/cray/libfabric/1.11.0.4.75/lib64:1
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/opt/cray/pe/dsmml/0.1.5/dsmml/lib/pkgconfig:1;/opt/cray/pe/craype/2.7.8/pkg-config:1;/opt/cray/pe/pmi/6.0.12/lib/pkgconfig:1;/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig:1
+SLURM_CPU_BIND=quiet,mask_cpu:0x00000000000000000000000000000001
+SLURMD_NODENAME=spock02
+PE_PKGCONFIG_PRODUCTS=PE_LIBSCI:PE_MPICH:PE_DSMML:PE_PMI:PE_XPMEM
+CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.7/ofi
+PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.7/gtl/lib
+_ModuleTable004_=ZE9yZGVyIl09MTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1saWJzY2kiLH0sWyJjcmF5LW1waWNoIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tbmV0L2NyYXljbGFuZy8xMC4wL29maS8xLjAvY3JheS1tcGljaC84LjEuNy5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1tcGljaC84LjEuNyIsWyJsb2FkT3JkZXIiXT0xMSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LW1waWNoIix9LFsiY3JheS1wbWkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXktcG1pLzYu
+PE_LIBSCI_GENCOMPILERS_GNU_x86_64=9.1
+MINICOM=-c on
+SLURM_TASKS_PER_NODE=1
+PAT_BUILD_PAPI_LIBDIR=/opt/cray/pe/papi/6.0.0.7/lib64
+C3_RSH=ssh -oConnectTimeout=10 -oForwardX11=no
+PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@
+PE_MPICH_PKGCONFIG_LIBS=mpich
+OSTYPE=linux
+PE_LEVEL=12.0
+OLCF_FAMILY_CRAYPE=craype
+XDG_SESSION_ID=3166
+__LMOD_REF_COUNT_INCLUDE_PATH_X86_64=/opt/cray/pe/cce/12.0.1/cce-clang/x86_64/lib/clang/12.0.0/include:1;/opt/cray/pe/cce/12.0.1/cce/x86_64/include/craylibs:1
+CRAY_DSMML_VER=0.1.5
+SLURM_NNODES=1
+USER=USER
+SPLUNK_HOME=/data/opt/splunk
+PAGER=less
+SLURM_LAUNCH_NODE_IPADDR=172.30.201.143
+CRAY_CXX_IPA_LIBS_AARCH64=/opt/cray/pe/cce/12.0.1/cce/aarch64/lib/libcray-c++-rts.a
+LMOD_FAMILY_PRGENV_VERSION=8.1.0
+OLCF_FAMILY_CRAYPE_NETWORK_VERSION=false
+OLCF_ROCM_ROOT=/opt/rocm-4.2.0
+_ModuleTable012_=ZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQiLCIvc3cvc3BvY2svbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvbW9kdWxlZmlsZXMiLCIvb3B0L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0Oi9zdy9zcG9jay9tb2R1bGVmaWxlczovb3B0L2NyYXkvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlcyIsfQ==
+SLURM_STEP_TASKS_PER_NODE=1
+CRAY_CPU_TARGET=x86-rome
+PE_LIBSCI_VOLATILE_PRGENV=AMD CRAY GNU
+__LMOD_REF_COUNT_MODULEPATH=/sw/spock/spack-envs/base/modules/spack/cray-sles15-x86_64/cray-mpich/8.1.7-nts3lqd/cce/12.0.1:1;/sw/spock/spack-envs/base/modules/spack/cray-sles15-x86_64/cce/12.0.1:1;/sw/spock/spack-envs/base/modules/spack/linux-sles15-x86_64/Core:1;/opt/cray/pe/lmod/modulefiles/cncm/crayclang/10.0/ofi/1.0/x86-rome/1.0/cray-mpich/8.0:1;/opt/cray/pe/lmod/modulefiles/mpi/crayclang/10.0/ofi/1.0/cray-mpich/8.0:1;/opt/cray/pe/lmod/modulefiles/comcpu/crayclang/10.0/x86-rome/1.0:1;/opt/cray/pe/lmod/modulefiles/comnet/crayclang/10.0/ofi/1.0:1;/opt/cray/pe/lmod/modulefiles/compiler/crayclang/10.0:1;/opt/cray/pe/lmod/modulefiles/perftools/21.05.0:1;/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:1;/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/opt/cray/pe/lmod/modulefiles/core:1;/opt/cray/pe/lmod/modulefiles/craype-targets/default:1;/sw/spock/modulefiles:1;/opt/cray/modulefiles:1;/opt/modulefiles:1
+PKGCONFIG_ENABLED=1
+PMI_CONTROL_PORT=20598
+MORE=-sl
+CRAY_PERFTOOLS_PREFIX=/opt/cray/pe/perftools/21.05.0
+PE_FORTRAN_PKGCONFIG_LIBS=mpichf90
+__LMOD_REF_COUNT_LOADEDMODULES=craype-x86-rome:1;libfabric/1.11.0.4.75:1;craype-network-ofi:1;perftools-base/21.05.0:1;xpmem/2.2.40-2.1_2.44__g3cf3325.shasta:1;cray-pmi/6.0.12:1;cray-pmi-lib/6.0.12:1;cce/12.0.1:1;craype/2.7.8:1;cray-dsmml/0.1.5:1;cray-mpich/8.1.7:1;cray-libsci/21.06.1.1:1;PrgEnv-cray/8.1.0:1;DefApps/default:1;rocm/4.2.0:1
+__LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH=/opt/cray/pe/libsci/21.06.1.1/CRAY/9.0/x86_64/lib:1;/opt/cray/pe/mpich/8.1.7/ofi/crayclang/10.0/lib:1;/opt/cray/pe/dsmml/0.1.5/dsmml/lib:1;/opt/cray/pe/cce/12.0.1/cce-clang/x86_64/lib:1;/opt/cray/pe/cce/12.0.1/cce/x86_64/lib:1;/opt/cray/pe/pmi/6.0.12/lib:1;/opt/cray/pe/perftools/21.05.0/lib64:1
+CRAY_CXX_IPA_LIBS=/opt/cray/pe/cce/12.0.1/cce/x86_64/lib/libcray-c++-rts.a
+OLCF_FAMILY_MPI_VERSION=8.1.7
+CRAY_LIBSCI_BASE_DIR=/opt/cray/pe/libsci/21.06.1.1
+PWD=/ccs/home/USER
+OLCF_FAMILY_COMPILER_VERSION=12.0.1
+PALS_RANKID=0
+PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.7/gtl/lib
+SLURM_JOB_NODELIST=spock02
+HOME=/ccs/home/USER
+OLCF_FAMILY_CRAYPE_CPU=craype-x86-rome
+SLURM_CLUSTER_NAME=spock
+CRAY_PMI_INCLUDE_OPTS=-I/opt/cray/pe/pmi/6.0.12/include
+CRAYLIBS_AARCH64=/opt/cray/pe/cce/12.0.1/cce/aarch64/lib
+PELOCAL_PRGENV=true
+CMAKE_PREFIX_PATH=/opt/rocm-4.2.0/hip:/opt/rocm-4.2.0
+PE_LIBSCI_REQUIRED_PRODUCTS=PE_MPICH
+SLURM_NODELIST=spock02
+PE_LIBSCI_GENCOMPS_AMD_x86_64=40
+HOST=login1
+__LMOD_REF_COUNT_PE_PMI_PKGCONFIG_LIBS=cray-pmi:1
+SSH_CLIENT=160.91.195.68 47802 22
+LMOD_VERSION=8.3.1
+XNLSPATH=/usr/X11R6/lib/X11/nls
+PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90
+SLURM_NTASKS=1
+PE_LIBSCI_PKGCONFIG_LIBS=libsci_mpi:libsci
+SLURM_UMASK=0077
+CRAY_LMOD_CPU=x86-rome/1.0
+PE_LIBSCI_OMP_REQUIRES_openmp=_mp
+PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda
+LMOD_FAMILY_CRAYPE_CPU_VERSION=false
+SLURM_JOB_CPUS_PER_NODE=64
+BASH_ENV=/usr/share/lmod/lmod/init/bash
+CRAYLIBS_X86_64=/opt/cray/pe/cce/12.0.1/cce/x86_64/lib
+XDG_DATA_DIRS=/usr/share
+PALS_APINFO=/var/spool/slurm/mpi_cray_shasta/284211.0/apinfo
+__LMOD_REF_COUNT_PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90:1
+SLURM_THREADS_PER_CORE=1
+SLURM_TOPOLOGY_ADDR=root.s0.spock02
+CRAY_BINUTILS_ROOT=/opt/cray/pe/cce/12.0.1/binutils/x86_64/x86_64-pc-linux-gnu/../
+CRAY_LMOD_NET=ofi/1.0
+SVN_EDITOR=vi
+__LMOD_REF_COUNT_HIPCC_COMPILE_FLAGS_APPEND=--rocm-path=/opt/rocm-4.2.0:1
+__LMOD_REF_COUNT_PE_PKGCONFIG_PRODUCTS=PE_LIBSCI:1;PE_MPICH:1;PE_DSMML:1;PE_PMI:1;PE_XPMEM:1
+PE_PMI_PKGCONFIG_LIBS=cray-pmi
+PE_MPICH_MODULE_NAME=cray-mpich
+LIBGL_DEBUG=quiet
+CRAY_LIBSCI_DIR=/opt/cray/pe/libsci/21.06.1.1
+NLSPATH=/opt/cray/pe/cce/12.0.1/cce/x86_64/share/nls/En/%N.cat
+OLCF_FAMILY_MPI=cray-mpich
+__LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_CRAYCLANG=10.0:1
+SLURM_WORKING_CLUSTER=spock:util1:6817:9216:109
+PE_LIBSCI_VOLATILE_PKGCONFIG_PATH=/opt/cray/pe/libsci/21.06.1.1/@PRGENV@/@PE_LIBSCI_GENCOMPS@/@PE_LIBSCI_TARGET@/lib/pkgconfig
+__LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV=CRAYCLANG:1
+OLCF_FAMILY_CRAYPE_VERSION=2.7.8
+__LMOD_REF_COUNT_LIBRARY_PATH=/opt/rocm-4.2.0/llvm/lib:1
+LIBSCI_VERSION=21.06.1.1
+SLURM_STEP_NODELIST=spock02
+PALS_SPOOL_DIR=/var/spool/slurm/mpi_cray_shasta/284211.0
+SLURM_JOB_NAME=interactive
+SLURM_SRUN_COMM_PORT=7802
+PROFILEREAD=true
+TMPDIR=/tmp
+LIBRARY_PATH=/opt/rocm-4.2.0/llvm/lib
+HSA_PATH=/opt/rocm-4.2.0
+PERFTOOLS_VERSION=21.05.0
+CRAY_BINUTILS_VERSION=/opt/cray/pe/cce/12.0.1
+__LMOD_REF_COUNT_CMAKE_PREFIX_PATH=/opt/rocm-4.2.0/hip:1;/opt/rocm-4.2.0:1
+LMOD_sys=Linux
+CRAY_CCE_CLANGSHARE=/opt/cray/pe/cce/12.0.1/cce-clang/x86_64/share
+PE_PKGCONFIG_LIBS=libsci_mpi:libsci:mpich:dsmml
+_ModuleTable010_=cy9iYXNlL21vZHVsZXMvc3BhY2svY3JheS1zbGVzMTUteDg2XzY0L2NjZS8xMi4wLjEiLCIvc3cvc3BvY2svc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc3BhY2svbGludXgtc2xlczE1LXg4Nl82NC9Db3JlIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY25jbS9jcmF5Y2xhbmcvMTAuMC9vZmkvMS4wL3g4Ni1yb21lLzEuMC9jcmF5LW1waWNoLzguMCIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL21waS9jcmF5Y2xhbmcvMTAuMC9vZmkvMS4wL2NyYXktbXBpY2gvOC4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tY3B1L2NyYXljbGFuZy8xMC4wL3g4Ni1yb21lLzEuMCIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvbW5l
+CRAY_PMI_PREFIX=/opt/cray/pe/pmi/6.0.12
+SLURM_JOBID=284211
+HIPCC_COMPILE_FLAGS_APPEND=--rocm-path=/opt/rocm-4.2.0
+_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbIlByZ0VudiJdPSJQcmdFbnYtY3JheSIsWyJjb21waWxlciJdPSJjY2UiLFsiY3JheXBlIl09ImNyYXlwZSIsWyJjcmF5cGVfY3B1Il09ImNyYXlwZS14ODYtcm9tZSIsWyJjcmF5cGVfbmV0d29yayJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibXBpIl09ImNyYXktbXBpY2giLH0sbVQ9e0RlZkFwcHM9e1siZm4iXT0iL3N3L3Nwb2NrL21vZHVsZWZpbGVzL0RlZkFwcHMvZGVmYXVsdC5sdWEiLFsiZnVsbE5hbWUiXT0iRGVmQXBwcy9kZWZhdWx0IixbImxvYWRPcmRlciJdPTE0LHByb3BUPXt9LFsic3RhY2tE
+SLURM_CONF=/var/spool/slurm/conf-cache/slurm.conf
+LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.75:craype-network-ofi:perftools-base/21.05.0:xpmem/2.2.40-2.1_2.44__g3cf3325.shasta:cray-pmi/6.0.12:cray-pmi-lib/6.0.12:cce/12.0.1:craype/2.7.8:cray-dsmml/0.1.5:cray-mpich/8.1.7:cray-libsci/21.06.1.1:PrgEnv-cray/8.1.0:DefApps/default:rocm/4.2.0
+OLCF_FAMILY_CRAYPE_CPU_VERSION=false
++ lsb_release -a
+CRAYPE_NETWORK_TARGET=ofi
+HWLOC_KEEP_NVIDIA_GPU_NUMA_NODES=1
+INCLUDE_PATH_AARCH64=/opt/cray/pe/cce/12.0.1/cce/aarch64/include/craylibs
+CRAY_PE_USE_CLANG=/opt/cray/pe/cce/12.0.1/cce-clang/x86_64/bin/clang
+__LMOD_REF_COUNT_MANPATH=/opt/cray/pe/libsci/21.06.1.1/man:1;/opt/cray/pe/man/csmlversion:1;/opt/cray/pe/mpich/8.1.7/ofi/man:1;/opt/cray/pe/mpich/8.1.7/man/mpich:1;/opt/cray/pe/dsmml/0.1.5/dsmml/man:1;/opt/cray/pe/craype/2.7.8/man:1;/opt/cray/pe/cce/12.0.1/cce-clang/x86_64/share/man:1;/opt/cray/pe/cce/12.0.1/man:1;/opt/cray/pe/pmi/6.0.12/man:1;/opt/cray/pe/perftools/21.05.0/man:1;/opt/cray/pe/papi/6.0.0.7/share/pdoc/man:1;/opt/cray/libfabric/1.11.0.4.75/share/man:1;/usr/share/lmod/lmod/share/man:1;/usr/local/man:1;/opt/c3/man:1;/opt/puppetlabs/puppet/share/man:1;/opt/clmgr/man:1;/opt/sgi/share/man:1;/opt/clmgr/share/man:1;/opt/clmgr/lib/cm-cli/man:1;/usr/share/man:2
+_ModuleTable006_=bGVzL2NvcmUvY3JheXBlLzIuNy44Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjgiLFsibG9hZE9yZGVyIl09OSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUiLH0sWyJjcmF5cGUtbmV0d29yay1vZmkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L2NyYXlwZS1uZXR3b3JrLW9maS5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIix9LFsi
+PALS_APID=284211.0
+GCC_AARCH64=/opt/gcc-cross-aarch64/8.1.0/aarch64
+_ModuleTable003_=RGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjY2UiLH0sWyJjcmF5LWRzbW1sIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LWRzbW1sLzAuMS41Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LWRzbW1sLzAuMS41IixbImxvYWRPcmRlciJdPTEwLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktZHNtbWwiLH0sWyJjcmF5LWxpYnNjaSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvY3JheS1saWJzY2kvMjEuMDYuMS4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LWxpYnNjaS8yMS4wNi4xLjEiLFsibG9h
+SLURM_NODE_ALIASES=(null)
+SLURM_JOB_QOS=normal
+LMOD_ROOT=/usr/share/lmod
+SLURM_TOPOLOGY_ADDR_PATTERN=switch.switch.node
+SSH_TTY=/dev/pts/83
+FROM_HEADER=
+PE_CRAYCLANG_FIXED_PKGCONFIG_PATH=/opt/cray/pe/libsci/21.06.1.1/CRAY/9.0/x86_64/lib/pkgconfig:/opt/cray/pe/mpich/8.1.7/ofi/crayclang/10.0/lib/pkgconfig
+CRAY_MPICH_ROOTDIR=/opt/cray/pe/mpich/8.1.7
+MAIL=/var/spool/mail/USER
+CRAY_CCE_SHARE=/opt/cray/pe/cce/12.0.1/cce/x86_64/share
+SLURM_STEP_RESV_PORTS=20598-20599
+CRAY_BINUTILS_BIN_AARCH64=/opt/cray/pe/cce/12.0.1/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/bin
+SLURM_CPUS_ON_NODE=128
+VISUAL=vi
+SLURM_JOB_NUM_NODES=1
+LESSKEY=/etc/lesskey.bin
+_ModuleTable009_=cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0icm9jbS80LjIuMCIsfSx4cG1lbT17WyJmbiJdPSIvb3B0L2NyYXkvbW9kdWxlZmlsZXMveHBtZW0vMi4yLjQwLTIuMV8yLjQ0X19nM2NmMzMyNS5zaGFzdGEiLFsiZnVsbE5hbWUiXT0ieHBtZW0vMi4yLjQwLTIuMV8yLjQ0X19nM2NmMzMyNS5zaGFzdGEiLFsibG9hZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJ4cG1lbSIsfSx9LG1wYXRoQT17Ii9zdy9zcG9jay9zcGFjay1lbnZzL2Jhc2UvbW9kdWxlcy9zcGFjay9jcmF5LXNsZXMxNS14ODZfNjQvY3JheS1tcGljaC84LjEuNy1udHMzbHFkL2NjZS8xMi4wLjEiLCIvc3cvc3BvY2svc3BhY2stZW52
+SHELL=/bin/bash
+TERM=xterm-256color
+CRAY_MPICH_VER=8.1.7
+LMOD_ADMIN_FILE=/sw/spock/lmod/etc/admin.list
+PE_MPICH_GENCOMPILERS_CRAYCLANG=10.0
+CRAY_BINUTILS_ROOT_AARCH64=/opt/cray/pe/cce/12.0.1/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/../
+PE_MPICH_FIXED_PRGENV=CRAYCLANG
+OLCF_FAMILY_PRGENV_VERSION=8.1.0
+LMOD_SITE_NAME=OLCF
+LMOD_FAMILY_PRGENV=PrgEnv-cray
+PE_LIBSCI_GENCOMPILERS_AMD_x86_64=4.0
+_ModuleTable_Sz_=12
+SLURM_JOB_UID=63464
+CRAY_LIBSCI_VERSION=21.06.1.1
+SLURM_JOB_PARTITION=batch
+CRAY_CXX_IPA_LIBS_X86_64=/opt/cray/pe/cce/12.0.1/cce/x86_64/lib/libcray-c++-rts.a
+CRAY_BINUTILS_BIN_X86_64=/opt/cray/pe/cce/12.0.1/binutils/x86_64/bin
+USE_PCM_DB=2
+LMOD_FAMILY_COMPILER=cce
+CC_X86_64=/opt/cray/pe/cce/12.0.1/cce/x86_64
+XLOCALEDIR=/usr/share/X11/locale
+CRAY_DSMML_BASEDIR=/opt/cray/pe/dsmml/0.1.5
+SLURM_PTY_WIN_ROW=40
+CRAY_XPMEM_POST_LINK_OPTS=-L/opt/cray/xpmem/2.2.40-2.1_2.44__g3cf3325.shasta/lib64
+FORTRAN_SYSTEM_MODULE_NAMES=ftn_lib_definitions
+SLURM_CPU_BIND_LIST=0x00000000000000000000000000000001
+PROJWORK=/gpfs/alpine/proj-shared
+SLURM_JOB_USER=USER
+PYTHONSTARTUP=/etc/pythonstart
+CRAY_PE_CCE_VARIANT=CC=Clang:FTN=Classic
+SLURM_PTY_WIN_COL=80
+LLVM_PATH=/opt/rocm-4.2.0/llvm
+SLURM_NPROCS=1
+CRAY_CC_VERSION=12.0.1
+SHLVL=4
+LANGUAGE=en_US.UTF-8
+SLURM_SUBMIT_HOST=spock02
+G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-15,CP1252
+CRAY_LIBSCI_PREFIX_DIR=/opt/cray/pe/libsci/21.06.1.1/CRAY/9.0/x86_64
+SLURM_JOB_ACCOUNT=stf006
+HIP_COMPILER=clang
+HIP_PATH=/opt/rocm-4.2.0/hip
+CRAY_BINUTILS_BIN=/opt/cray/pe/cce/12.0.1/binutils/x86_64/bin
+MANPATH=/sw/analysis-x64/cuda/2.0/sl5.0_binary/man:/sw/analysis-x64/cuda/2.0/sl5.0_binary/man:/sw/analysis-x64/cuda/2.0/sl5.0_binary/man:/opt/cray/pe/libsci/21.06.1.1/man:/opt/cray/pe/man/csmlversion:/opt/cray/pe/mpich/8.1.7/ofi/man:/opt/cray/pe/mpich/8.1.7/man/mpich:/opt/cray/pe/dsmml/0.1.5/dsmml/man:/opt/cray/pe/craype/2.7.8/man:/opt/cray/pe/cce/12.0.1/cce-clang/x86_64/share/man:/opt/cray/pe/cce/12.0.1/man:/opt/cray/pe/pmi/6.0.12/man:/opt/cray/pe/perftools/21.05.0/man:/opt/cray/pe/papi/6.0.0.7/share/pdoc/man:/opt/cray/libfabric/1.11.0.4.75/share/man:/usr/share/lmod/lmod/share/man:/usr/local/man:/opt/c3/man:/opt/puppetlabs/puppet/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man:/usr/share/man
+hostnickname=login1
+CRAY_FTN_VERSION=12.0.1
+CRAY_DSMML_VERSION=0.1.5
+MPICH_DIR=/opt/cray/pe/mpich/8.1.7/ofi/crayclang/10.0
+OSCAR_HOME=/opt/oscar
+SLURM_STEP_LAUNCHER_PORT=7802
+OLCF_FAMILY_PRGENV=PrgEnv-cray
+MODULEPATH=/sw/spock/spack-envs/base/modules/spack/cray-sles15-x86_64/cray-mpich/8.1.7-nts3lqd/cce/12.0.1:/sw/spock/spack-envs/base/modules/spack/cray-sles15-x86_64/cce/12.0.1:/sw/spock/spack-envs/base/modules/spack/linux-sles15-x86_64/Core:/opt/cray/pe/lmod/modulefiles/cncm/crayclang/10.0/ofi/1.0/x86-rome/1.0/cray-mpich/8.0:/opt/cray/pe/lmod/modulefiles/mpi/crayclang/10.0/ofi/1.0/cray-mpich/8.0:/opt/cray/pe/lmod/modulefiles/comcpu/crayclang/10.0/x86-rome/1.0:/opt/cray/pe/lmod/modulefiles/comnet/crayclang/10.0/ofi/1.0:/opt/cray/pe/lmod/modulefiles/compiler/crayclang/10.0:/opt/cray/pe/lmod/modulefiles/perftools/21.05.0:/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/opt/cray/pe/lmod/modulefiles/core:/opt/cray/pe/lmod/modulefiles/craype-targets/default:/sw/spock/modulefiles:/opt/cray/modulefiles:/opt/modulefiles
+CRAY_MPICH_DIR=/opt/cray/pe/mpich/8.1.7/ofi/crayclang/10.0
+SLURM_PTY_PORT=7209
+SLURM_GTIDS=0
+LMOD_FAMILY_CRAYPE=craype
+LOGNAME=USER
+DEVICE_LIB_PATH=/opt/rocm-4.2.0/amdgcn/bitcode
+__LMOD_REF_COUNT_XLOCALEDIR=/usr/share/X11/locale:1
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/63464/bus
+CRAY_PMI_VERSION=6.0.12
+CRAY_MPICH_VERSION=8.1.7
+XDG_RUNTIME_DIR=/run/user/63464
+MODULEPATH_ROOT=/usr/share/modulefiles
+LMOD_PACKAGE_PATH=/sw/spock/lmod/libexec
+PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa
+PE_DSMML_PKGCONFIG_LIBS=dsmml
+PE_LIBSCI_PKGCONFIG_VARIABLES=PE_LIBSCI_OMP_REQUIRES_@openmp@:PE_SCI_EXT_LIBPATH:PE_SCI_EXT_LIBNAME
+XDG_CONFIG_DIRS=/etc/xdg
+PE_LIBSCI_GENCOMPS_CRAY_x86_64=90
+PATH=/opt/conda/bin:/data/opt/splunk/bin:.:/ccs/home/USER/bin:/ccs/home/USER/bin/common:/opt/rocm-4.2.0/bin:/opt/conda/bin:/data/opt/splunk/bin:.:/ccs/home/USER/bin:/ccs/home/USER/bin/common:/opt/cray/pe/mpich/8.1.7/ofi/crayclang/10.0/bin:/opt/cray/pe/craype/2.7.8/bin:/opt/cray/pe/cce/12.0.1/binutils/x86_64/x86_64-pc-linux-gnu/bin:/opt/cray/pe/cce/12.0.1/binutils/cross/x86_64-aarch64/aarch64-linux-gnu/../bin:/opt/cray/pe/cce/12.0.1/utils/x86_64/bin:/opt/cray/pe/cce/12.0.1/cce-clang/x86_64/bin:/opt/cray/pe/perftools/21.05.0/bin:/opt/cray/pe/papi/6.0.0.7/bin:/opt/cray/libfabric/1.11.0.4.75/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/local/bin:/usr/bin:/bin:/opt/bin:/opt/c3/bin:/opt/puppetlabs/bin:/sbin:/opt/cray/pe/bin:/lustre/atlas1/bif102/proj-shared/comet:/lustre/atlas1/bif102/proj-shared/comet
+PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa
+SLURM_JOB_ID=284211
+__LMOD_REF_COUNT_FORTRAN_SYSTEM_MODULE_NAMES=ftn_lib_definitions:1
+__LMOD_REF_COUNT_PE_PRODUCT_LIST=CRAY_LIBSCI:1;CRAYPE:1;CRAY_PMI:1;CRAYPE_X86_ROME:1;PERFTOOLS:1;CRAYPAT:1
+_LMFILES_=/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:/opt/cray/modulefiles/libfabric/1.11.0.4.75:/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:/opt/cray/pe/lmod/modulefiles/core/perftools-base/21.05.0.lua:/opt/cray/modulefiles/xpmem/2.2.40-2.1_2.44__g3cf3325.shasta:/opt/cray/pe/lmod/modulefiles/core/cray-pmi/6.0.12.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pmi-lib/6.0.12.lua:/opt/cray/pe/lmod/modulefiles/core/cce/12.0.1.lua:/opt/cray/pe/lmod/modulefiles/core/craype/2.7.8.lua:/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.1.5.lua:/opt/cray/pe/lmod/modulefiles/comnet/crayclang/10.0/ofi/1.0/cray-mpich/8.1.7.lua:/opt/cray/pe/lmod/modulefiles/core/cray-libsci/21.06.1.1.lua:/opt/cray/pe/lmod/modulefiles/core/PrgEnv-cray/8.1.0.lua:/sw/spock/modulefiles/DefApps/default.lua:/sw/spock/modulefiles/rocm/4.2.0.lua
+SLURM_CPU_BIND_TYPE=mask_cpu:
+OLCF_FAMILY_COMPILER=cce
+SLURM_STEP_NUM_TASKS=1
+MODULESHOME=/usr/share/lmod/lmod
+LMOD_SETTARG_FULL_SUPPORT=no
+PKG_CONFIG_PATH=/opt/cray/pe/dsmml/0.1.5/dsmml/lib/pkgconfig:/opt/cray/pe/craype/2.7.8/pkg-config:/opt/cray/pe/pmi/6.0.12/lib/pkgconfig:/opt/cray/libfabric/1.11.0.4.75/lib64/pkgconfig
+LIBSCI_BASE_DIR=/opt/cray/pe/libsci/21.06.1.1
+G_BROKEN_FILENAMES=1
+_ModuleTable011_=dC9jcmF5Y2xhbmcvMTAuMC9vZmkvMS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tcGlsZXIvY3JheWNsYW5nLzEwLjAiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9wZXJmdG9vbHMvMjEuMDUuMCIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL25ldC9vZmkvMS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3B1L3g4Ni1yb21lLzEuMCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmUiLCIvdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZSIsIi9vcHQvY3JheS9wZS9sbW9kL21v
+HISTSIZE=1000
+CRAYPE_DIR=/opt/cray/pe/craype/2.7.8
+SLURM_JOB_CPUS_PER_NODE_PACK_GROUP_0=64
+LMOD_PKG=/usr/share/lmod/lmod
+__LMOD_REF_COUNT_PE_MPICH_PKGCONFIG_LIBS=mpich:1
+SLURM_STEP_NUM_NODES=1
+OFFLOAD_INIT=on_start
+CPU=x86_64
+__LMOD_REF_COUNT_PE_PKGCONFIG_LIBS=libsci_mpi:1;libsci:1;mpich:1;dsmml:1
+CRAYPE_VERSION=2.7.8
+INCLUDE_PATH_X86_64=/opt/cray/pe/cce/12.0.1/cce-clang/x86_64/lib/clang/12.0.0/include:/opt/cray/pe/cce/12.0.1/cce/x86_64/include/craylibs
+OLCF_FAMILY_CRAYPE_NETWORK=craype-network-ofi
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+_ModuleTable005_=MC4xMi5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1wbWkvNi4wLjEyIixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1wbWkiLH0sWyJjcmF5LXBtaS1saWIiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXktcG1pLWxpYi82LjAuMTIubHVhIixbImZ1bGxOYW1lIl09ImNyYXktcG1pLWxpYi82LjAuMTIiLFsibG9hZE9yZGVyIl09Nyxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LXBtaS1saWIiLH0sY3JheXBlPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZp
+WORLDWORK=/gpfs/alpine/world-shared
+CRAY_PMI_POST_LINK_OPTS=-L/opt/cray/pe/pmi/6.0.12/lib
+SLURM_LOCALID=0
+CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.7/ofi/crayclang/10.0
+LESSOPEN=lessopen.sh %s
+CRAYPAT_OPTS_EXECUTABLE=libexec64/opts
+CRAY_XPMEM_INCLUDE_OPTS=-I/opt/cray/xpmem/2.2.40-2.1_2.44__g3cf3325.shasta/include
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+PE_LIBSCI_GENCOMPS_GNU_x86_64=91
+LMOD_FAMILY_MPI=cray-mpich
+BASH_FUNC_module%%=() {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
+}
+BASH_FUNC_ml%%=() {  eval $($LMOD_DIR/ml_cmd "$@")
+}
+LSB Version:	n/a
+Distributor ID:	SUSE
+Description:	SUSE Linux Enterprise Server 15 SP2
+Release:	15.2
+Codename:	n/a
++ uname -a
+Linux spock02 5.3.18-24.75_10.0.184-cray_shasta_c #1 SMP Mon Jul 26 15:33:02 UTC 2021 (01de6ae) x86_64 x86_64 x86_64 GNU/Linux
++ lscpu
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+Address sizes:       48 bits physical, 48 bits virtual
+CPU(s):              128
+On-line CPU(s) list: 0-127
+Thread(s) per core:  2
+Core(s) per socket:  64
+Socket(s):           1
+NUMA node(s):        4
+Vendor ID:           AuthenticAMD
+CPU family:          23
+Model:               49
+Model name:          AMD EPYC 7662 64-Core Processor
+Stepping:            0
+CPU MHz:             3162.976
+BogoMIPS:            3992.72
+Virtualization:      AMD-V
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            512K
+L3 cache:            16384K
+NUMA node0 CPU(s):   0-15,64-79
+NUMA node1 CPU(s):   16-31,80-95
+NUMA node2 CPU(s):   32-47,96-111
+NUMA node3 CPU(s):   48-63,112-127
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif umip rdpid overflow_recov succor smca
++ cat /proc/meminfo
+MemTotal:       263437572 kB
+MemFree:        231057964 kB
+MemAvailable:   230303196 kB
+Buffers:           14944 kB
+Cached:          3384272 kB
+SwapCached:            0 kB
+Active:           958924 kB
+Inactive:        3331340 kB
+Active(anon):     931896 kB
+Inactive(anon):  3226364 kB
+Active(file):      27028 kB
+Inactive(file):   104976 kB
+Unevictable:    16834832 kB
+Mlocked:        16834900 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:      17727084 kB
+Mapped:          4640940 kB
+Shmem:           3256152 kB
+KReclaimable:      74568 kB
+Slab:            2966432 kB
+SReclaimable:      74568 kB
+SUnreclaim:      2891864 kB
+KernelStack:       32240 kB
+PageTables:        51392 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    131718784 kB
+Committed_AS:   20704676 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:     5157412 kB
+VmallocChunk:          0 kB
+Percpu:           216064 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:  17119232 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:     6818740 kB
+DirectMap2M:    99866624 kB
+DirectMap1G:    161480704 kB
++ inxi -F -c0
+/autofs/nccs-svm1_home2/USER/./collect_environment.sh: line 14: inxi: command not found
++ lsblk -a
+NAME    MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+loop0     7:0    0   1.6G  1 loop /root_ro
+loop1     7:1    0   2.4G  1 loop /var/opt/cray/pe/pe_images/base-21.07
+loop2     7:2    0 222.3M  1 loop /var/opt/cray/pe/pe_images/amd-21.07
+loop3     7:3    0   2.5G  1 loop /var/opt/cray/pe/pe_images/base-21.05
+loop4     7:4    0   1.5G  1 loop /var/opt/cray/pe/pe_images/amd-21.05
+loop5     7:5    0     3G  1 loop /var/opt/cray/pe/pe_images/base-21.06
+loop6     7:6    0 810.1M  1 loop /var/opt/cray/pe/pe_images/amd-21.06
+loop7     7:7    0   2.4G  1 loop /var/opt/cray/pe/pe_images/base-21.08
+loop8     7:8    0 222.5M  1 loop /var/opt/cray/pe/pe_images/amd-21.08
+loop9     7:9    0   2.1G  1 loop /run/rocm_overlay/4.3.0/lower
+loop10    7:10   0   1.6G  1 loop /run/rocm_overlay/4.2.0/lower
+loop11    7:11   0   1.6G  1 loop /run/rocm_overlay/4.1.0/lower
+nvme0n1 259:0    0   2.9T  0 disk 
+nvme1n1 259:1    0   2.9T  0 disk 
++ lsscsi -s
++ module list
+++ /usr/share/lmod/lmod/libexec/lmod bash list
+
+Currently Loaded Modules:
+  1) craype-x86-rome                          9) craype/2.7.8
+  2) libfabric/1.11.0.4.75                   10) cray-dsmml/0.1.5
+  3) craype-network-ofi                      11) cray-mpich/8.1.7
+  4) perftools-base/21.05.0                  12) cray-libsci/21.06.1.1
+  5) xpmem/2.2.40-2.1_2.44__g3cf3325.shasta  13) PrgEnv-cray/8.1.0
+  6) cray-pmi/6.0.12                         14) DefApps/default
+  7) cray-pmi-lib/6.0.12                     15) rocm/4.2.0
+  8) cce/12.0.1
+
+ 
+
++ eval 'MODULEPATH=/sw/spock/spack-envs/base/modules/spack/cray-sles15-x86_64/cray-mpich/8.1.7-nts3lqd/cce/12.0.1:/sw/spock/spack-envs/base/modules/spack/cray-sles15-x86_64/cce/12.0.1:/sw/spock/spack-envs/base/modules/spack/linux-sles15-x86_64/Core:/opt/cray/pe/lmod/modulefiles/cncm/crayclang/10.0/ofi/1.0/x86-rome/1.0/cray-mpich/8.0:/opt/cray/pe/lmod/modulefiles/mpi/crayclang/10.0/ofi/1.0/cray-mpich/8.0:/opt/cray/pe/lmod/modulefiles/comcpu/crayclang/10.0/x86-rome/1.0:/opt/cray/pe/lmod/modulefiles/comnet/crayclang/10.0/ofi/1.0:/opt/cray/pe/lmod/modulefiles/compiler/crayclang/10.0:/opt/cray/pe/lmod/modulefiles/perftools/21.05.0:/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/opt/cray/pe/lmod/modulefiles/core:/opt/cray/pe/lmod/modulefiles/craype-targets/default:/sw/spock/modulefiles:/opt/cray/modulefiles:/opt/modulefiles;' export 'MODULEPATH;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbIlByZ0VudiJdPSJQcmdFbnYtY3JheSIsWyJjb21waWxlciJdPSJjY2UiLFsiY3JheXBlIl09ImNyYXlwZSIsWyJjcmF5cGVfY3B1Il09ImNyYXlwZS14ODYtcm9tZSIsWyJjcmF5cGVfbmV0d29yayJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibXBpIl09ImNyYXktbXBpY2giLH0sbVQ9e0RlZkFwcHM9e1siZm4iXT0iL3N3L3Nwb2NrL21vZHVsZWZpbGVzL0RlZkFwcHMvZGVmYXVsdC5sdWEiLFsiZnVsbE5hbWUiXT0iRGVmQXBwcy9kZWZhdWx0IixbImxvYWRPcmRlciJdPTE0LHByb3BUPXt9LFsic3RhY2tE;' export '_ModuleTable001_;' '_ModuleTable002_=ZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IkRlZkFwcHMiLH0sWyJQcmdFbnYtY3JheSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvUHJnRW52LWNyYXkvOC4xLjAubHVhIixbImZ1bGxOYW1lIl09IlByZ0Vudi1jcmF5LzguMS4wIixbImxvYWRPcmRlciJdPTEzLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IlByZ0Vudi1jcmF5Iix9LGNjZT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NjZS8xMi4wLjEubHVhIixbImZ1bGxOYW1lIl09ImNjZS8xMi4wLjEiLFsibG9hZE9yZGVyIl09OCxwcm9wVD17fSxbInN0YWNr;' export '_ModuleTable002_;' '_ModuleTable003_=RGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjY2UiLH0sWyJjcmF5LWRzbW1sIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LWRzbW1sLzAuMS41Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LWRzbW1sLzAuMS41IixbImxvYWRPcmRlciJdPTEwLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktZHNtbWwiLH0sWyJjcmF5LWxpYnNjaSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvY3JheS1saWJzY2kvMjEuMDYuMS4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LWxpYnNjaS8yMS4wNi4xLjEiLFsibG9h;' export '_ModuleTable003_;' '_ModuleTable004_=ZE9yZGVyIl09MTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1saWJzY2kiLH0sWyJjcmF5LW1waWNoIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tbmV0L2NyYXljbGFuZy8xMC4wL29maS8xLjAvY3JheS1tcGljaC84LjEuNy5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1tcGljaC84LjEuNyIsWyJsb2FkT3JkZXIiXT0xMSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LW1waWNoIix9LFsiY3JheS1wbWkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXktcG1pLzYu;' export '_ModuleTable004_;' '_ModuleTable005_=MC4xMi5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1wbWkvNi4wLjEyIixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1wbWkiLH0sWyJjcmF5LXBtaS1saWIiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXktcG1pLWxpYi82LjAuMTIubHVhIixbImZ1bGxOYW1lIl09ImNyYXktcG1pLWxpYi82LjAuMTIiLFsibG9hZE9yZGVyIl09Nyxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LXBtaS1saWIiLH0sY3JheXBlPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZp;' export '_ModuleTable005_;' '_ModuleTable006_=bGVzL2NvcmUvY3JheXBlLzIuNy44Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjgiLFsibG9hZE9yZGVyIl09OSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUiLH0sWyJjcmF5cGUtbmV0d29yay1vZmkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L2NyYXlwZS1uZXR3b3JrLW9maS5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIix9LFsi;' export '_ModuleTable006_;' '_ModuleTable007_=Y3JheXBlLXg4Ni1yb21lIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9jcmF5cGUteDg2LXJvbWUubHVhIixbImZ1bGxOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsfSxsaWJmYWJyaWM9e1siZm4iXT0iL29wdC9jcmF5L21vZHVsZWZpbGVzL2xpYmZhYnJpYy8xLjExLjAuNC43NSIsWyJmdWxsTmFtZSJdPSJsaWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFj;' export '_ModuleTable007_;' '_ModuleTable008_=dGl2ZSIsWyJ1c2VyTmFtZSJdPSJsaWJmYWJyaWMiLH0sWyJwZXJmdG9vbHMtYmFzZSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvcGVyZnRvb2xzLWJhc2UvMjEuMDUuMC5sdWEiLFsiZnVsbE5hbWUiXT0icGVyZnRvb2xzLWJhc2UvMjEuMDUuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InBlcmZ0b29scy1iYXNlIix9LHJvY209e1siZm4iXT0iL3N3L3Nwb2NrL21vZHVsZWZpbGVzL3JvY20vNC4yLjAubHVhIixbImZ1bGxOYW1lIl09InJvY20vNC4yLjAiLFsibG9hZE9yZGVyIl09MTUscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1;' export '_ModuleTable008_;' '_ModuleTable009_=cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0icm9jbS80LjIuMCIsfSx4cG1lbT17WyJmbiJdPSIvb3B0L2NyYXkvbW9kdWxlZmlsZXMveHBtZW0vMi4yLjQwLTIuMV8yLjQ0X19nM2NmMzMyNS5zaGFzdGEiLFsiZnVsbE5hbWUiXT0ieHBtZW0vMi4yLjQwLTIuMV8yLjQ0X19nM2NmMzMyNS5zaGFzdGEiLFsibG9hZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJ4cG1lbSIsfSx9LG1wYXRoQT17Ii9zdy9zcG9jay9zcGFjay1lbnZzL2Jhc2UvbW9kdWxlcy9zcGFjay9jcmF5LXNsZXMxNS14ODZfNjQvY3JheS1tcGljaC84LjEuNy1udHMzbHFkL2NjZS8xMi4wLjEiLCIvc3cvc3BvY2svc3BhY2stZW52;' export '_ModuleTable009_;' '_ModuleTable010_=cy9iYXNlL21vZHVsZXMvc3BhY2svY3JheS1zbGVzMTUteDg2XzY0L2NjZS8xMi4wLjEiLCIvc3cvc3BvY2svc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc3BhY2svbGludXgtc2xlczE1LXg4Nl82NC9Db3JlIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY25jbS9jcmF5Y2xhbmcvMTAuMC9vZmkvMS4wL3g4Ni1yb21lLzEuMC9jcmF5LW1waWNoLzguMCIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL21waS9jcmF5Y2xhbmcvMTAuMC9vZmkvMS4wL2NyYXktbXBpY2gvOC4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tY3B1L2NyYXljbGFuZy8xMC4wL3g4Ni1yb21lLzEuMCIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvbW5l;' export '_ModuleTable010_;' '_ModuleTable011_=dC9jcmF5Y2xhbmcvMTAuMC9vZmkvMS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tcGlsZXIvY3JheWNsYW5nLzEwLjAiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9wZXJmdG9vbHMvMjEuMDUuMCIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL25ldC9vZmkvMS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3B1L3g4Ni1yb21lLzEuMCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmUiLCIvdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZSIsIi9vcHQvY3JheS9wZS9sbW9kL21v;' export '_ModuleTable011_;' '_ModuleTable012_=ZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQiLCIvc3cvc3BvY2svbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvbW9kdWxlZmlsZXMiLCIvb3B0L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0Oi9zdy9zcG9jay9tb2R1bGVmaWxlczovb3B0L2NyYXkvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlcyIsfQ==;' export '_ModuleTable012_;' '_ModuleTable_Sz_=12;' export '_ModuleTable_Sz_;'
+++ MODULEPATH=/sw/spock/spack-envs/base/modules/spack/cray-sles15-x86_64/cray-mpich/8.1.7-nts3lqd/cce/12.0.1:/sw/spock/spack-envs/base/modules/spack/cray-sles15-x86_64/cce/12.0.1:/sw/spock/spack-envs/base/modules/spack/linux-sles15-x86_64/Core:/opt/cray/pe/lmod/modulefiles/cncm/crayclang/10.0/ofi/1.0/x86-rome/1.0/cray-mpich/8.0:/opt/cray/pe/lmod/modulefiles/mpi/crayclang/10.0/ofi/1.0/cray-mpich/8.0:/opt/cray/pe/lmod/modulefiles/comcpu/crayclang/10.0/x86-rome/1.0:/opt/cray/pe/lmod/modulefiles/comnet/crayclang/10.0/ofi/1.0:/opt/cray/pe/lmod/modulefiles/compiler/crayclang/10.0:/opt/cray/pe/lmod/modulefiles/perftools/21.05.0:/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/opt/cray/pe/lmod/modulefiles/core:/opt/cray/pe/lmod/modulefiles/craype-targets/default:/sw/spock/modulefiles:/opt/cray/modulefiles:/opt/modulefiles
+++ export MODULEPATH
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbIlByZ0VudiJdPSJQcmdFbnYtY3JheSIsWyJjb21waWxlciJdPSJjY2UiLFsiY3JheXBlIl09ImNyYXlwZSIsWyJjcmF5cGVfY3B1Il09ImNyYXlwZS14ODYtcm9tZSIsWyJjcmF5cGVfbmV0d29yayJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibXBpIl09ImNyYXktbXBpY2giLH0sbVQ9e0RlZkFwcHM9e1siZm4iXT0iL3N3L3Nwb2NrL21vZHVsZWZpbGVzL0RlZkFwcHMvZGVmYXVsdC5sdWEiLFsiZnVsbE5hbWUiXT0iRGVmQXBwcy9kZWZhdWx0IixbImxvYWRPcmRlciJdPTE0LHByb3BUPXt9LFsic3RhY2tE
+++ export _ModuleTable001_
+++ _ModuleTable002_=ZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IkRlZkFwcHMiLH0sWyJQcmdFbnYtY3JheSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvUHJnRW52LWNyYXkvOC4xLjAubHVhIixbImZ1bGxOYW1lIl09IlByZ0Vudi1jcmF5LzguMS4wIixbImxvYWRPcmRlciJdPTEzLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IlByZ0Vudi1jcmF5Iix9LGNjZT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NjZS8xMi4wLjEubHVhIixbImZ1bGxOYW1lIl09ImNjZS8xMi4wLjEiLFsibG9hZE9yZGVyIl09OCxwcm9wVD17fSxbInN0YWNr
+++ export _ModuleTable002_
+++ _ModuleTable003_=RGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjY2UiLH0sWyJjcmF5LWRzbW1sIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LWRzbW1sLzAuMS41Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LWRzbW1sLzAuMS41IixbImxvYWRPcmRlciJdPTEwLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktZHNtbWwiLH0sWyJjcmF5LWxpYnNjaSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvY3JheS1saWJzY2kvMjEuMDYuMS4xLmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LWxpYnNjaS8yMS4wNi4xLjEiLFsibG9h
+++ export _ModuleTable003_
+++ _ModuleTable004_=ZE9yZGVyIl09MTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1saWJzY2kiLH0sWyJjcmF5LW1waWNoIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tbmV0L2NyYXljbGFuZy8xMC4wL29maS8xLjAvY3JheS1tcGljaC84LjEuNy5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1tcGljaC84LjEuNyIsWyJsb2FkT3JkZXIiXT0xMSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LW1waWNoIix9LFsiY3JheS1wbWkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXktcG1pLzYu
+++ export _ModuleTable004_
+++ _ModuleTable005_=MC4xMi5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1wbWkvNi4wLjEyIixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1wbWkiLH0sWyJjcmF5LXBtaS1saWIiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXktcG1pLWxpYi82LjAuMTIubHVhIixbImZ1bGxOYW1lIl09ImNyYXktcG1pLWxpYi82LjAuMTIiLFsibG9hZE9yZGVyIl09Nyxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LXBtaS1saWIiLH0sY3JheXBlPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZp
+++ export _ModuleTable005_
+++ _ModuleTable006_=bGVzL2NvcmUvY3JheXBlLzIuNy44Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjgiLFsibG9hZE9yZGVyIl09OSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUiLH0sWyJjcmF5cGUtbmV0d29yay1vZmkiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L2NyYXlwZS1uZXR3b3JrLW9maS5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbImxvYWRPcmRlciJdPTMscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLW5ldHdvcmstb2ZpIix9LFsi
+++ export _ModuleTable006_
+++ _ModuleTable007_=Y3JheXBlLXg4Ni1yb21lIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9jcmF5cGUteDg2LXJvbWUubHVhIixbImZ1bGxOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS14ODYtcm9tZSIsfSxsaWJmYWJyaWM9e1siZm4iXT0iL29wdC9jcmF5L21vZHVsZWZpbGVzL2xpYmZhYnJpYy8xLjExLjAuNC43NSIsWyJmdWxsTmFtZSJdPSJsaWJmYWJyaWMvMS4xMS4wLjQuNzUiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFj
+++ export _ModuleTable007_
+++ _ModuleTable008_=dGl2ZSIsWyJ1c2VyTmFtZSJdPSJsaWJmYWJyaWMiLH0sWyJwZXJmdG9vbHMtYmFzZSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvcGVyZnRvb2xzLWJhc2UvMjEuMDUuMC5sdWEiLFsiZnVsbE5hbWUiXT0icGVyZnRvb2xzLWJhc2UvMjEuMDUuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InBlcmZ0b29scy1iYXNlIix9LHJvY209e1siZm4iXT0iL3N3L3Nwb2NrL21vZHVsZWZpbGVzL3JvY20vNC4yLjAubHVhIixbImZ1bGxOYW1lIl09InJvY20vNC4yLjAiLFsibG9hZE9yZGVyIl09MTUscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1
+++ export _ModuleTable008_
+++ _ModuleTable009_=cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0icm9jbS80LjIuMCIsfSx4cG1lbT17WyJmbiJdPSIvb3B0L2NyYXkvbW9kdWxlZmlsZXMveHBtZW0vMi4yLjQwLTIuMV8yLjQ0X19nM2NmMzMyNS5zaGFzdGEiLFsiZnVsbE5hbWUiXT0ieHBtZW0vMi4yLjQwLTIuMV8yLjQ0X19nM2NmMzMyNS5zaGFzdGEiLFsibG9hZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJ4cG1lbSIsfSx9LG1wYXRoQT17Ii9zdy9zcG9jay9zcGFjay1lbnZzL2Jhc2UvbW9kdWxlcy9zcGFjay9jcmF5LXNsZXMxNS14ODZfNjQvY3JheS1tcGljaC84LjEuNy1udHMzbHFkL2NjZS8xMi4wLjEiLCIvc3cvc3BvY2svc3BhY2stZW52
+++ export _ModuleTable009_
+++ _ModuleTable010_=cy9iYXNlL21vZHVsZXMvc3BhY2svY3JheS1zbGVzMTUteDg2XzY0L2NjZS8xMi4wLjEiLCIvc3cvc3BvY2svc3BhY2stZW52cy9iYXNlL21vZHVsZXMvc3BhY2svbGludXgtc2xlczE1LXg4Nl82NC9Db3JlIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY25jbS9jcmF5Y2xhbmcvMTAuMC9vZmkvMS4wL3g4Ni1yb21lLzEuMC9jcmF5LW1waWNoLzguMCIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL21waS9jcmF5Y2xhbmcvMTAuMC9vZmkvMS4wL2NyYXktbXBpY2gvOC4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tY3B1L2NyYXljbGFuZy8xMC4wL3g4Ni1yb21lLzEuMCIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvbW5l
+++ export _ModuleTable010_
+++ _ModuleTable011_=dC9jcmF5Y2xhbmcvMTAuMC9vZmkvMS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tcGlsZXIvY3JheWNsYW5nLzEwLjAiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9wZXJmdG9vbHMvMjEuMDUuMCIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL25ldC9vZmkvMS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3B1L3g4Ni1yb21lLzEuMCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmUiLCIvdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZSIsIi9vcHQvY3JheS9wZS9sbW9kL21v
+++ export _ModuleTable011_
+++ _ModuleTable012_=ZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQiLCIvc3cvc3BvY2svbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvbW9kdWxlZmlsZXMiLCIvb3B0L21vZHVsZWZpbGVzIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0Oi9zdy9zcG9jay9tb2R1bGVmaWxlczovb3B0L2NyYXkvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlcyIsfQ==
+++ export _ModuleTable012_
+++ _ModuleTable_Sz_=12
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ nvidia-smi
+/autofs/nccs-svm1_home2/USER/./collect_environment.sh: line 18: nvidia-smi: command not found
++ cat
++ lshw -short -quiet -sanitize
+/autofs/nccs-svm1_home2/USER/./collect_environment.sh: line 19: lshw: command not found
++ lspci
+00:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+00:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+00:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:01.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+00:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:03.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+00:03.2 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+00:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+00:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+00:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+00:14.0 SMBus: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller (rev 61)
+00:14.3 ISA bridge: Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge (rev 51)
+00:18.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 0
+00:18.1 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 1
+00:18.2 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 2
+00:18.3 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 3
+00:18.4 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 4
+00:18.5 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 5
+00:18.6 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 6
+00:18.7 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship Device 24; Function 7
+01:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+01:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+02:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP
+02:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+02:00.3 USB controller: Advanced Micro Devices, Inc. [AMD] Starship USB 3.0 Host Controller
+03:00.0 Non-Volatile memory controller: KIOXIA Corporation NVMe SSD Controller Cx6 (rev 01)
+04:00.0 Non-Volatile memory controller: KIOXIA Corporation NVMe SSD Controller Cx6 (rev 01)
+05:00.0 PCI bridge: PMC-Sierra Inc. Device 4000
+05:00.1 Memory controller: PMC-Sierra Inc. Device 4000
+06:00.0 PCI bridge: PMC-Sierra Inc. Device 4000
+06:01.0 PCI bridge: PMC-Sierra Inc. Device 4000
+07:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD/ATI] Device 14a0 (rev 01)
+08:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD/ATI] Device 14a1
+09:00.0 Display controller: Advanced Micro Devices, Inc. [AMD/ATI] Arcturus GL-XL [AMD Instinct MI100] (rev 01)
+40:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+40:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+40:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+40:01.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+40:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+40:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+40:03.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+40:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+40:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+40:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+40:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+40:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+40:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+41:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+41:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+42:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP
+42:00.1 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Cryptographic Coprocessor PSPCPP
+42:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+42:00.3 USB controller: Advanced Micro Devices, Inc. [AMD] Starship USB 3.0 Host Controller
+43:00.0 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+43:00.1 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+43:00.2 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+43:00.3 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+44:00.0 PCI bridge: PMC-Sierra Inc. Device 4000
+44:00.1 Memory controller: PMC-Sierra Inc. Device 4000
+45:00.0 PCI bridge: PMC-Sierra Inc. Device 4000
+45:01.0 PCI bridge: PMC-Sierra Inc. Device 4000
+46:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD/ATI] Device 14a0 (rev 01)
+47:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD/ATI] Device 14a1
+48:00.0 Display controller: Advanced Micro Devices, Inc. [AMD/ATI] Arcturus GL-XL [AMD Instinct MI100] (rev 01)
+80:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+80:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+80:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+80:01.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+80:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+80:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+80:03.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+80:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+80:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+80:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+80:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+80:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+80:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+81:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+81:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+82:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP
+82:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+83:00.0 PCI bridge: PMC-Sierra Inc. Device 4000
+83:00.1 Memory controller: PMC-Sierra Inc. Device 4000
+84:00.0 PCI bridge: PMC-Sierra Inc. Device 4000
+84:01.0 PCI bridge: PMC-Sierra Inc. Device 4000
+85:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD/ATI] Device 14a0 (rev 01)
+86:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD/ATI] Device 14a1
+87:00.0 Display controller: Advanced Micro Devices, Inc. [AMD/ATI] Arcturus GL-XL [AMD Instinct MI100] (rev 01)
+c0:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+c0:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU
+c0:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+c0:01.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+c0:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+c0:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+c0:03.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+c0:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+c0:05.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+c0:05.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+c0:05.2 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge
+c0:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+c0:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+c0:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+c0:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B]
+c1:00.0 System peripheral: Hewlett-Packard Company Integrated Lights-Out Standard Slave Instrumentation & System Support (rev 07)
+c1:00.1 VGA compatible controller: Matrox Electronics Systems Ltd. MGA G200eH3 (rev 02)
+c1:00.2 System peripheral: Hewlett-Packard Company Integrated Lights-Out Standard Management Processor Support and Messaging (rev 07)
+c1:00.4 USB controller: Hewlett-Packard Company iLO5 Virtual USB Controller
+c2:00.0 Ethernet controller: Intel Corporation I350 Gigabit Network Connection (rev 01)
+c3:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function
+c3:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+c4:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Reserved SPP
+c4:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PTDMA
+c5:00.0 PCI bridge: PMC-Sierra Inc. Device 4000
+c5:00.1 Memory controller: PMC-Sierra Inc. Device 4000
+c6:00.0 PCI bridge: PMC-Sierra Inc. Device 4000
+c6:01.0 PCI bridge: PMC-Sierra Inc. Device 4000
+c7:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD/ATI] Device 14a0 (rev 01)
+c8:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD/ATI] Device 14a1
+c9:00.0 Display controller: Advanced Micro Devices, Inc. [AMD/ATI] Arcturus GL-XL [AMD Instinct MI100] (rev 01)
+cb:00.0 Ethernet controller: Mellanox Technologies MT27800 Family [ConnectX-5]
