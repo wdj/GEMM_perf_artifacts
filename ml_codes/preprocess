@@ -1,0 +1,327 @@
+#!/usr/bin/env python
+
+import sys
+import os
+import math
+import csv
+
+#------------------------------------------------------------------------------
+
+cases = {
+  'peak': {
+    'run_set': 'randommk',
+    'platform': 'peak',
+    'infile': 'out_randommk-peak.csv',
+    'outfile': 'runs12-peak.csv',
+    'indm': 0, 'indk': 1, 'indr': 2, 'indt': 3, 'indf': 4,
+    'mmin': 0, 'kmin': 0,
+    'mmax': 100000, 'kmax': 100000000,
+    #'mmax': 40000, 'kmax': 1000000,
+    'mmod': 8, 'kmod': 8,
+    'mmodmax': 128, # 64 might be enough
+    'mlog2stepwidth': 8,
+    'check_f': False,
+    'trials': 1,
+    'trials_use': 1,
+  },
+  'peak1c': {
+    'run_set': 'fixedk',
+    'platform': 'peak',
+    'infile': 'out_fixedk-peak.csv',
+    'outfile': 'runs1c-peak.csv',
+    'indm': 0, 'indk': 1, 'indr': 2, 'indt': 3, 'indf': 4,
+    'mmin': 0, 'kmin': 0,
+    'mmax': 100000, 'kmax': 100000000,
+    #'mmax': 40000, 'kmax': 1000000,
+    'mmod': 8, 'kmod': 8,
+    'mmodmax': 128, # 64 might be enough
+    'mlog2stepwidth': 8,
+    'check_f': False,
+    'trials': 6,
+    'trials_use': 1,
+  },
+  'bsd': {
+    'run_set': 'randommk',
+    'platform': 'bsd',
+    'infile': 'out_randommk-bsd-6trial.csv',
+    'outfile': 'runs12-bsd.csv',
+    'indm': 0, 'indk': 1, 'indr': 2, 'indt': 3, 'indf': 4,
+    'mmin': 0, 'kmin': 0,
+    'mmax': 100000, 'kmax': 100000000,
+    #'mmax': 40000, 'kmax': 2000000,
+    'mmod': 8, 'kmod': 8,
+    'mmodmax': 64,
+    'mlog2stepwidth': 8,
+    'check_f': False,
+    'trials': 6,
+    #'trials_use': 6,
+    'trials_use': 1,
+  },
+  'bsd1c': {
+    'run_set': 'fixedk',
+    'platform': 'bsd',
+    'infile': 'out_fixedk-bsd.csv',
+    'outfile': 'runs1c-bsd.csv',
+    'indm': 0, 'indk': 1, 'indr': 2, 'indt': 3, 'indf': 4,
+    'mmin': 0, 'kmin': 0,
+    'mmax': 100000, 'kmax': 100000000,
+    #'mmax': 40000, 'kmax': 2000000,
+    'mmod': 8, 'kmod': 8,
+    'mmodmax': 64,
+    'mlog2stepwidth': 8,
+    'check_f': False,
+    'trials': 6,
+    #'trials_use': 6,
+    'trials_use': 1,
+  },
+  'bsd10': {
+    'run_set': 'randommk',
+    'platform': 'bsd',
+    'infile': 'out_randommk-bsd-1trial.csv',
+    'outfile': 'runs10-bsd.csv',
+    'indm': 0, 'indk': 1, 'indr': 2, 'indt': 3, 'indf': 4,
+    'mmin': 0, 'kmin': 0,
+    'mmax': 100000, 'kmax': 100000000,
+    #'mmax': 40000, 'kmax': 2000000,
+    'mmod': 8, 'kmod': 8,
+    'mmodmax': 64,
+    'mlog2stepwidth': 8,
+    'check_f': False,
+    'trials': 1,
+    'trials_use': 1,
+  },
+  'spock': {
+    'run_set': 'randommk',
+    'platform': 'spock',
+    'infile': 'out_randommk-spock.csv',
+    'outfile': 'runs12-spock4.2.csv',
+    'indm': 0, 'indk': 1, 'indr': 2, 'indt': 3, 'indf': 4,
+    'mmin': 0, 'kmin': 0,
+    'mmax': 100000, 'kmax': 100000000,
+    #'mmax': 40000, 'kmax': 1000000,
+    'mmod': 1, 'kmod': 1,
+    'mmodmax': 8,
+    'mlog2stepwidth': 8,
+    'check_f': True,
+    'trials': 2,
+    'trials_use': 1,
+  },
+  'spock1c': {
+    'run_set': 'fixedk',
+    'platform': 'spock',
+    'infile': 'out_fixedk-spock.csv',
+    'outfile': 'runs1c-spock4.2.csv',
+    'indm': 0, 'indk': 1, 'indr': 2, 'indt': 3, 'indf': 4,
+    'mmin': 0, 'kmin': 0,
+    'mmax': 100000, 'kmax': 100000000,
+    #'mmax': 40000, 'kmax': 1000000,
+    'mmod': 1, 'kmod': 1,
+    'mmodmax': 8,
+    'mlog2stepwidth': 8,
+    'check_f': True,
+    'trials': 6,
+    'trials_use': 1,
+  },
+  'iris': {
+    'run_set': 'randommk',
+    'platform': 'iris',
+    'infile': 'out_randommk-iris.csv',
+    'outfile': 'runs12-iris.csv',
+    'indm': 0, 'indk': 1, 'indr': 2, 'indt': 3, 'indf': 4,
+    'mmin': 0, 'kmin': 0,
+    'mmax': 100000, 'kmax': 100000000,
+    #'mmax': 40000, 'kmax': 1000000,
+    'mmod': 1, 'kmod': 1,
+    'mmodmax': 2,
+    'mlog2stepwidth': 5,
+    'check_f': False,
+    'trials': 2,
+    'trials_use': 1,
+  },
+  'iris1c': {
+    'run_set': 'fixedk',
+    'platform': 'iris',
+    'infile': 'out_fixedk-iris.csv',
+    'outfile': 'runs1c-iris.csv',
+    'indm': 0, 'indk': 1, 'indr': 2, 'indt': 3, 'indf': 4,
+    'mmin': 0, 'kmin': 0,
+    'mmax': 100000, 'kmax': 100000000,
+    #'mmax': 40000, 'kmax': 1000000,
+    'mmod': 1, 'kmod': 1,
+    'mmodmax': 2,
+    'mlog2stepwidth': 5,
+    'check_f': False,
+    'trials': 6,
+    'trials_use': 1,
+  },
+}
+
+#------------------------------------------------------------------------------
+
+
+
+for case_name in ['peak1c', 'bsd1c', 'spock1c', 'iris1c',
+                  'peak', 'bsd', 'bsd10', 'spock', 'iris']:
+
+    case = cases[case_name]
+    run_set = case['run_set']
+
+    is_p_is_s = ([(True, True)] if run_set == 'randommk' else
+                 [(False, False), (False, True), (True, False), (True, True)])
+
+    for is_p, is_s in is_p_is_s:
+
+        infile = os.path.join('inputs', case['infile'])
+        outfile = os.path.join('inputs', case['outfile'][:-4] +
+          ('' if is_p and is_s else '_nos' if is_p else '_nop' if is_s else '_nops') +
+          '.csv')
+        sc = case['platform']
+        indm = case['indm']
+        indk = case['indk']
+        indt = case['indt']
+        indr = case['indr']
+        indf = case['indf']
+        mmin = case['mmin']
+        kmin = case['kmin']
+        mmax = case['mmax']
+        kmax = case['kmax']
+        mmod = case['mmod']
+        kmod = case['kmod']
+        mmodmax = case['mmodmax']
+        mlog2stepwidth = case['mlog2stepwidth']
+        check_f = case['check_f']
+        trials = case['trials']
+        trials_use = case['trials_use']
+
+        # Acces input data.
+
+        csvinfile = open(infile, newline='')
+        csvdata = list(csv.reader(csvinfile, delimiter='\t', quotechar='|'))
+        csvdata1 = [row for row in csvdata if int(row[indm]) >= mmin and int(row[indk]) >= kmin and
+                                              int(row[indm]) < mmax and int(row[indk]) < kmax and
+                                              int(row[indm]) % mmod == 0 and int(row[indk]) % kmod == 0]
+
+        col_m, col_k, col_r, col_t, col_f, col_v = [], [], [], [], [], []
+
+        # Extract fields from input data.
+
+        rmax = 0.
+        for i in range(len(csvdata1)):
+            if i < trials-1: continue
+            have_all_trials = True
+            for j in range(trials):
+                have_all_trials = have_all_trials and csvdata1[i-j][indm] == csvdata1[i][indm] and csvdata1[i-j][indk] == csvdata1[i][indk]
+                num_fail = int(csvdata1[i-j][indf]) if check_f else 0
+                have_all_trials = have_all_trials and num_fail == 0
+                have_all_trials = have_all_trials and float(csvdata1[i-j][indr]) < 10000.
+            if not have_all_trials: continue
+            if trials_use == 1:
+                #ratesum = 0.
+                #rateworst = 1e30
+                timesum = 0.
+                timeworst = 0.
+                timebest = 1e30
+                ibest = i
+                for j in range(trials):
+                    row = csvdata1[i-j]
+                    fi = int(row[indf]) if check_f else 0
+                    #rate = float(row[indr]) if fi == 0 else 0
+                    time = float(row[indt]) if fi == 0 else 0
+                    #ratesum += rate
+                    timesum += time
+                    #if rate < rateworst:
+                    #    rateworst = rate
+                    if time > timeworst:
+                        timeworst = time
+                    #if rate > ratebest:
+                    #    ratebest = rate
+                    #    ibest = i - j
+                    if time < timebest:
+                        timebest = time
+                        ibest = i - j
+                rows = [csvdata1[ibest]]
+                timeavg = timesum / trials
+                #if rateavg == 0.: print(trials, ratesum)
+                timevar = (timeworst - timebest) / timeavg
+            else:
+                rows = [csvdata1[i-j] for j in range(trials)]
+                timevar = 0.
+            for row in rows:
+                col_m.append(int(row[indm]))
+                col_k.append(int(row[indk]))
+                col_r.append(float(row[indr]))
+                col_t.append(float(row[indt]))
+                col_f.append(0)
+                col_v.append(timevar)
+                rmax = col_r[-1] if col_r[-1] > rmax else rmax
+
+        # Write output file.
+
+        csvoutfile = open(outfile, mode='w')
+        writer = csv.writer(csvoutfile)
+
+        field_names = []
+        #rows = []
+
+        for i in range(len(col_m)):
+
+            print_fieldnames = i == 0
+
+            row = []
+
+            m = col_m[i]
+            k = col_k[i]
+
+            row.append(str(m))
+            row.append(str(k))
+            if print_fieldnames:
+                field_names.append('m')
+                field_names.append('k')
+
+            i_po2 = mmod
+            while i_po2 <= (mmodmax if is_p else mmod):
+
+                f_po2 = 1 if m % i_po2 == 0 else 0
+                fn_po2 = 'm%' + str(i_po2) + '==0' if is_p else '1'
+
+                i_lsw = mlog2stepwidth
+                while i_lsw <= (16 if is_s else mlog2stepwidth):
+
+                    f_lsw  =  1 - (((m-1) >> i_lsw) & 1) if is_s else 1
+                    fn_lsw = '1-(((m-1)>>' + str(i_lsw) + ')&1)' if is_s else '1'
+
+                    if is_p or is_s:
+                        if print_fieldnames:
+                            field_names.append('(' + fn_po2 + ')*(' + fn_lsw + ')')
+                        row.append(str(f_po2 * f_lsw))
+
+                    i_lsw += 1
+
+                i_po2 *= 2
+
+            if print_fieldnames:
+                field_names.append('logtime')
+            row.append(str(math.log(col_t[i])))
+
+            if print_fieldnames:
+                field_names.append('time')
+            row.append(str(col_t[i]))
+
+            if print_fieldnames:
+                field_names.append('timevar')
+            row.append(str(col_v[i]))
+
+            if print_fieldnames:
+                field_names.append('rate')
+            row.append(str(col_r[i]))
+
+            # Write to file.
+
+            if print_fieldnames:
+                writer.writerow(field_names)
+            writer.writerow(row)
+
+        print(outfile+': samples:', len(col_t), ' max TOp/sec: ', rmax,
+              ' fields: ', len(field_names))
+
+#------------------------------------------------------------------------------

@@ -1,0 +1,329 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+#------------------------------------------------------------------------------
+
+import sys
+import os
+import csv
+
+import pandas as pd
+import numpy as np
+import math
+
+from sklearn.model_selection import train_test_split, cross_val_score, StratifiedKFold, GridSearchCV
+#from sklearn import metrics
+from sklearn.metrics import mean_squared_error
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import make_pipeline
+from sklearn.gaussian_process import GaussianProcessRegressor
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.linear_model import LinearRegression, PassiveAggressiveRegressor, RidgeCV, SGDRegressor
+from sklearn.ensemble import AdaBoostRegressor, BaggingRegressor, ExtraTreesRegressor, GradientBoostingRegressor, RandomForestRegressor
+from sklearn.neural_network import MLPRegressor
+from sklearn.dummy import DummyRegressor
+
+#------------------------------------------------------------------------------
+
+#def pop_dict(dict, key):
+#    try:
+#        del dict[key]
+#    except KeyError:
+#        pass
+#    return dict
+#
+#------------------------------------------------------------------------------
+
+# Parse arguments.
+
+#infile = 'full_data_sub.csv'
+infile = sys.argv[1]
+regressor_name = sys.argv[2]
+
+n_jobs = int(sys.argv[3]) if len(sys.argv) > 3 and sys.argv[3] != '' else 8
+outdir = sys.argv[4] if len(sys.argv) > 4 else 'outs'
+
+#------------------------------------------------------------------------------
+
+# Read in data.
+
+mmdf = pd.read_csv(os.path.join('inputs', infile), sep = ',')
+#mmdf = pd.read_csv(infile, sep = ',', nrows=70000)
+print('mmdf.head(3)', mmdf.head(3))
+print('list(mmdf.columns)', list(mmdf.columns))
+print('mmdf.shape', mmdf.shape)
+print('mmdf[m].unique()', mmdf['m'].unique())
+
+print('mmdf[logtime]', mmdf['logtime'])
+
+# Set up features/labels, test/train.
+
+X = mmdf.drop(['logtime', 'time', 'timevar', 'rate'], 1)
+print('list(X.columns)', list(X.columns))
+Y = mmdf['logtime']
+Y_scaledup = Y.copy()
+#for i in range(len(Y_scaledup)): Y_scaledup[i] = 1000. * Y_scaledup[i]
+#m = mmdf['m']
+#k = mmdf['k']
+time = mmdf['time']
+timevar = mmdf['timevar']
+rate = mmdf['rate']
+
+#X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = .2, random_state = 5)
+(X_train, X_test,
+ Y_train, Y_test,
+ Y_scaledup_train, Y_scaledup_test,
+ time_train, time_test,
+ timevar_train, timevar_test,
+ rate_train, rate_test,
+) = train_test_split(X, Y, Y_scaledup, time, timevar, rate, test_size = .2, random_state = 5)
+
+print('X.head(8)', X.head(8))
+
+#------------------------------------------------------------------------------
+
+# Set up training pipeline.
+
+regressor = (DecisionTreeRegressor() if regressor_name == 'dtree' else
+             ExtraTreesRegressor() if regressor_name == 'etree' else
+             GradientBoostingRegressor() if regressor_name == 'gboost' else
+             RandomForestRegressor() if regressor_name == 'ranfor' else
+             MLPRegressor() if regressor_name == 'nnet' else
+             GaussianProcessRegressor() if regressor_name == 'gproc' else
+             LinearRegression() if regressor_name == 'linreg' else
+             PassiveAggressiveRegressor() if regressor_name == 'pasag' else
+             RidgeCV() if regressor_name == 'ridge' else
+             SGDRegressor() if regressor_name == 'sgd' else
+             #TODOAdaBoostRegressor() if regressor_name == 'aboost' else
+             #TODOBaggingRegressor() if regressor_name == 'bag' else
+             None)
+
+regressor = make_pipeline(StandardScaler(), regressor)
+
+# Specify hyperparameter ranges.
+
+regressor_params = (
+  {
+    #'decisiontreeregressor__max_depth': range(300, 801, 500),
+    #'decisiontreeregressor__max_depth': [300, 800],
+    #'decisiontreeregressor__max_depth': [25, 50, 300, 800],
+    'decisiontreeregressor__max_depth': [30],
+    #'decisiontreeregressor__max_depth': [20],
+    #'decisiontreeregressor__max_features': [4, 11],
+    #'decisiontreeregressor__max_features': [38],
+    #'decisiontreeregressor__max_features': ['auto'],
+    'decisiontreeregressor__max_features': [4, 11, 'auto'],
+    #'decisiontreeregressor__criterion': ['mse', 'friedman_mse', 'mae'],
+    #'decisiontreeregressor__criterion': ['mse', 'friedman_mse'],
+    'decisiontreeregressor__criterion': ['mse'],
+    #'decisiontreeregressor__splitter': ['random'],
+    'decisiontreeregressor__splitter': ['best', 'random'],
+    #WIDE#'decisiontreeregressor__min_samples_split': range(2, 12, 2),
+    #'decisiontreeregressor__min_samples_split': range(4, 12, 4),
+    #WIDE#'decisiontreeregressor__min_samples_leaf': range(1, 9, 2)
+  } if regressor_name == 'dtree' else
+  {
+  #'extratreesregressor__max_depth': range(300, 801, 500),
+  #'extratreesregressor__max_depth': [300, 800],
+  'extratreesregressor__max_depth': [30],
+   #'extratreesregressor__max_features': [4, 11],
+   'extratreesregressor__max_features': [4, 11, 'auto'],
+   #'extratreesregressor__criterion': ['mse', 'mae'],
+   'extratreesregressor__criterion': ['mse'],
+   #'extratreesregressor__n_estimators': range(200, 501, 300)
+   'extratreesregressor__n_estimators': [25, 50, 100, 200],
+  } if regressor_name == 'etree' else
+  {
+   #'randomforestregressor__max_depth': range(300, 801, 500),
+   #'randomforestregressor__max_depth': [300, 800],
+   'randomforestregressor__max_depth': [30],
+   #'randomforestregressor__max_features': [4, 11],
+   'randomforestregressor__max_features': [4, 11, 'auto'],
+   #'randomforestregressor__criterion': ['mse', 'mae'],
+   'randomforestregressor__criterion': ['mse'],
+   #'randomforestregressor__n_estimators': range(200, 501, 300),
+   'randomforestregressor__n_estimators': [25, 50, 100, 200],
+  } if regressor_name == 'ranfor' else
+  {
+   #'mlpregressor__activation': ['identity', 'relu'],
+   'mlpregressor__activation': ['relu'],
+   'mlpregressor__solver': ['lbfgs', 'adam'],
+   'mlpregressor__max_iter': range(100000, 200001, 100000),
+   'mlpregressor__hidden_layer_sizes':[(500, 500, 500)],
+  } if regressor_name == 'nnet' else
+  {
+   #'gaussianprocessregressor__alpha': [1e-10, 1e-5, 1e-1],
+   #'gaussianprocessregressor__n_restarts_optimizer': [0, 10, 100],
+   #---N/A
+  } if regressor_name == 'gproc' else
+  {
+   #---N/A
+  } if regressor_name == 'linreg' else
+  {
+   #---N/A
+  } if regressor_name == 'pasag' else
+  {
+   #---N/A
+  } if regressor_name == 'ridge' else
+  {'sgdregressor__loss': ['squared_loss', 'huber', 'epsilon_insensitive', 'squared_epsilon_insensitive'],
+   'sgdregressor__penalty': ['l2', 'l1', 'elasticnet']
+  } if regressor_name == 'sgd' else
+   # TODO
+  {
+  } if regressor_name == 'aboost' else
+   # TODO
+  {
+  } if regressor_name == 'bag' else
+  {'gradientboostingregressor__loss': ['ls', 'lad', 'huber', 'quantile'],
+   #'gradientboostingregressor__criterion': ['friedman_mse', 'mse', 'mae'],
+   'gradientboostingregressor__criterion': ['mse'],
+   'gradientboostingregressor__n_estimators': range(10, 800, 75)
+  } if regressor_name == 'gboost' else
+  None
+)
+
+
+# Perform grid search.
+
+# https://stackoverflow.com/questions/50329349/cross-validation-in-sklearn-do-i-need-to-call-fit-as-well-as-cross-val-score/50330341
+# https://datascience.stackexchange.com/questions/21877/how-to-use-the-output-of-gridsearch
+# https://datascience.stackexchange.com/questions/51831/am-i-using-gridsearch-correctly-or-do-i-need-to-use-all-data-for-cross-validation
+
+print('Starting training ...')
+# Do (hyper)parameter search. Note default is refit=True.
+regressor_tuned = GridSearchCV(regressor, regressor_params, cv=5, n_jobs=n_jobs, scoring = 'neg_mean_squared_error', verbose=4)
+# Do training.
+regressor_tuned.fit(X_train, Y_scaledup_train)
+
+print('infile ', infile, " Best score: %f" % regressor_tuned.best_score_)
+print(f"Best params: {regressor_tuned.best_params_}")
+
+# Extract best regressor parameters from grid search, create new copy of regressor with them.
+# (Note: could we instead just retrieve best_estimator_?)
+regressor_base = (
+    DecisionTreeRegressor(**{x.replace("decisiontreeregressor__", ""): v for x, v in regressor_tuned.best_params_.items()})
+      if regressor_name == 'dtree' else
+    ExtraTreesRegressor(**{x.replace("extratreesregressor__", ""): v for x, v in regressor_tuned.best_params_.items()})
+      if regressor_name == 'etree' else
+    RandomForestRegressor(**{x.replace("randomforestregressor__", ""): v for x, v in regressor_tuned.best_params_.items()})
+      if regressor_name == 'ranfor' else
+    MLPRegressor(**{x.replace("mlpregressor__", ""): v for x, v in regressor_tuned.best_params_.items()})
+      if regressor_name == 'nnet' else
+    #GaussianProcessRegressor()
+    GaussianProcessRegressor(**{x.replace("gaussianprocessregressor__", ""): v for x, v in regressor_tuned.best_params_.items()})
+      if regressor_name == 'gproc' else
+    LinearRegression()
+      if regressor_name == 'linreg' else
+    PassiveAggressiveRegressor()
+      if regressor_name == 'pasag' else
+    RidgeCV()
+      if regressor_name == 'ridge' else
+    SGDRegressor(**{x.replace("sgdregressor__", ""): v for x, v in regressor_tuned.best_params_.items()})
+      if regressor_name == 'sgd' else
+    None # TODO
+      if regressor_name == 'aboost' else
+    None # TODO
+      if regressor_name == 'bag' else
+    GradientBoostingRegressor(**{x.replace("gradientboostingregressor__", ""): v for x, v in regressor_tuned.best_params_.items()})
+      if regressor_name == 'gboost' else
+    None
+)
+
+regressor = make_pipeline(StandardScaler(), regressor_base)
+
+## Now on all data, without cross-val holdout.
+#regressor.fit(X_train, Y_scaledup_train)
+
+# Train using cross validation, get score.
+# Note this was already done as part of grid search.
+# Note this does not modify the regressor, just computes scores based on an internal training.
+mse = cross_val_score(regressor, X_train, Y_scaledup_train, cv=5, scoring='neg_mean_squared_error')
+mse_score = mse.mean()
+print('mse_score_scaledup: ', "{:12.6f}".format(mse_score), '          ', mse_score)
+
+# Now train with original unscaled Y, with cv, get score.
+mse = cross_val_score(regressor, X_train, Y_train, cv=5, scoring='neg_mean_squared_error')
+mse_score = mse.mean()
+print('mse_score:          ', "{:12.6f}".format(mse_score), '          ', mse_score)
+
+# Now on all data, without cross-val holdout.
+regressor.fit(X_train, Y_train)
+
+if hasattr(regressor_base, 'oob_score_'):
+    print('oob_score_: ', regressor_base.oob_score_)
+
+if hasattr(regressor_base, 'feature_importances_'):
+    print('feature_importances_:')
+    for i, fi in enumerate(regressor_base.feature_importances_):
+        print(f'{int(i):>3}',f'{list(X.columns)[i]:>34}', "{:10.6f}".format(fi))
+    #print('feature_importances_:\n', regressor_base.feature_importances_)
+
+# Loop over train, test, all data, to print info.
+
+for choice in [['train', X_train, Y_train, time_train, timevar_train, rate_train],
+               ['test', X_test, Y_test, time_test, timevar_test, rate_test],
+               ['all', X, Y, time, timevar, rate]]:
+
+    name = choice[0]
+    X_choice = choice[1]
+    Y_choice = choice[2]
+    time_choice = choice[3]
+    timevar_choice = choice[4]
+    rate_choice = choice[5]
+
+    # Get prediction from X_choice via regressor.
+
+    Y_preds = regressor.predict(X_choice)
+
+    # Get predicted times and time rel diffs.
+
+    timereldiffs = []
+    timepreds = []
+    #max_reldiff = 0
+    for i, time in enumerate(time_choice):
+        timepred = math.exp(Y_preds[i])
+        timepreds.append(timepred)
+        timereldiff = abs(timepred - time) / time
+        #max_timereldiff = timereldiff if timereldiff > max_timereldiff else max_timereldiff
+        timereldiffs.append(timereldiff)
+
+    #print('Max reldiff over dataset ' + name + ': ' + str(max_timereldiff))
+
+    # Write data to file.
+
+    outfile = os.path.join(outdir, infile[:-4] + '-' + name + '-' + regressor_name + '.csv')
+    print(outfile)
+
+    fields = ['m', 'k', 'timepred', 'time', 'timereldiff', 'timevar', 'rate']
+    rows = []
+    for i in range(len(X_choice)):
+        rows.append([X_choice.iloc[i][0],
+                     X_choice.iloc[i][1],
+                     timepreds[i],
+                     time_choice.iloc[i],
+                     timereldiffs[i],
+                     timevar_choice.iloc[i],
+                     rate_choice.iloc[i],])
+
+    new_file = open(outfile, "w")
+    writer = csv.writer(new_file)
+    writer.writerow(fields)
+    writer.writerows(rows)
+
+    # Get MSE.
+
+    mse = mean_squared_error(Y_choice, Y_preds)
+    print('mse_' + name + ':          ', "{:12.6f}".format(mse), '          ', mse)
+
+    # Get percentiles.
+
+    timereldiffs_sorted = sorted(timereldiffs)
+
+    for fraction in ['0.9000', '0.9900', '0.9990', '0.9999', '1.0000']:
+        ind = int(float(fraction) * (len(timereldiffs_sorted)-1))
+        print('Fraction of ' + fraction + ' time predictions of ' + name +
+              ' have rel error no more than ' + "{:12.6f}".format(timereldiffs_sorted[ind]),
+              '          ', timereldiffs_sorted[ind])
+
+#------------------------------------------------------------------------------
